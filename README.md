@@ -1,6 +1,7 @@
 # 👋 Hey, I'm Moshe aka **ChiefGyk3D**
 
-### Cybersecurity Engineer | Linux Nerd | Radio & Networks | Open-Source Builder | Content Creator
+### Cybersecurity Engineer | Linux Nerd | Radio & Networks  
+### Open-Source Builder | Content Creator
 
 #### 🌐 Find me on
 
@@ -9,6 +10,7 @@
 [![Matrix](https://img.shields.io/badge/-Matrix-000000?style=for-the-badge&logo=matrix&logoColor=white)](https://matrix.to/#/#renegade-penguin:chiefgyk3d.com)
 [![Discord](https://img.shields.io/badge/-Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.chiefgyk3d.com)
 [![YouTube](https://img.shields.io/badge/-YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@ChiefGyk3D)
+[![Twitch](https://img.shields.io/badge/-Twitch-9146FF?style=for-the-badge&logo=twitch&logoColor=white)](https://twitch.tv/chiefgyk3d)
 [![Kick](https://img.shields.io/badge/-Kick-53FC18?style=for-the-badge&logo=kickstarter&logoColor=black)](https://kick.com/chiefgyk3d)
 [![TikTok](https://img.shields.io/badge/-TikTok-000000?style=for-the-badge&logo=tiktok&logoColor=white)](https://tiktok.com/@chiefgyk3d)
 
@@ -49,18 +51,15 @@ If you like cybersecurity automation, homelab engineering, decentralized social 
 
 ---
 
-## 🎥 Content Creation — Educating the Next Generation
+## 🎥 Content Creation, Educating the Next Generation
 
-**YouTube:** https://youtube.com/@ChiefGyk3D  
-**TikTok:** https://tiktok.com/@chiefgyk3d
-
-**Livestreaming on:** YouTube, Kick, Twitch, and TikTok
+**📹 Videos:** [YouTube](https://youtube.com/@ChiefGyk3D) • [TikTok](https://tiktok.com/@chiefgyk3d)  
+**🔴 Livestreaming:** [YouTube](https://youtube.com/@ChiefGyk3D) • [Twitch](https://twitch.tv/chiefgyk3d) • [Kick](https://kick.com/chiefgyk3d) • [TikTok](https://tiktok.com/@chiefgyk3d)
 
 I create educational content focused on empowering aspiring tech and cybersecurity professionals with practical, real-world knowledge:
 
 - **Linux** as a daily driver and production environment  
-- **Cybersecurity investigations** & real-world threat breakdowns  
-- **SignalGate exposés** and telecommunications security  
+- **Cybersecurity investigations** & real-world threat and news breakdowns  
 - **Radio & Meshtastic** communications and mesh networking  
 - **Endpoint security** & enterprise tooling deep dives  
 - **Home labs & networking** architecture and implementation  
@@ -148,7 +147,7 @@ Automated security advisory and OS patch notification bot. Keeps your systems se
 
 ## 🐧 Happy Hacking
 
-Everything I build is open-source — feel free to fork anything, submit PRs, or reach out.  
+Everything I build is open-source! Feel free to fork anything, submit PRs, or reach out.  
 Let's make the internet more secure and fun, one commit at a time. 🛡️
 
 ---
