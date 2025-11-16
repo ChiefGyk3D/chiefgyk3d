@@ -130,6 +130,20 @@ Automated security advisory and OS patch notification bot. Keeps your systems se
 
 ---
 
+### 🎵 **Pipewire Sink**
+PipeWire audio sink switcher for Linux. Easily manage and switch between audio output devices with a simple, lightweight tool.  
+
+**Repo:** https://github.com/ChiefGyk3D/pipewire_sink
+
+---
+
+### 🔀 **Split Tunnel Switch**
+Network split tunneling tool for routing specific applications through different network interfaces or VPN connections.  
+
+**Repo:** https://github.com/ChiefGyk3D/split_tunnel_switch
+
+---
+
 ## 📊 GitHub Stats
 
 <div align="center">
