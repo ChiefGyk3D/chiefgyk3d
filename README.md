@@ -1,4 +1,4 @@
-# 👋 Hey, I'm Moshe — aka **ChiefGyk3D**
+# 👋 Hey, I'm Moshe aka **ChiefGyk3D**
 
 ### Cybersecurity Engineer | Linux Nerd | Radio & Networks | Open-Source Builder | Content Creator
 
