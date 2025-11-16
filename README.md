@@ -25,9 +25,9 @@
 
 I break things, fix things, automate everything, and talk about it on YouTube.  
 
-My world revolves around **cybersecurity**, **blue team defense**, **Linux**, **homelabbing**, **radio comms**, and building tools that make tech *less painful* and *more secure.*
+My world revolves around cybersecurity, blue team defense, Linux, homelabbing, radio comms, and building tools that make tech *less painful* and *more secure.*
 
-In my free time, I'm a **content creator** dedicated to **educating the community and the next generation** of tech and cybersecurity professionals through hands-on tutorials, security breakdowns, and open-source projects.
+In my free time, I'm a content creator dedicated to educating the community and the next generation of tech and cybersecurity professionals through hands-on tutorials, security breakdowns, and open-source projects.
 
 If you like cybersecurity automation, homelab engineering, decentralized social media, or Linux on the desktop then you're in the right place.
 
@@ -37,16 +37,16 @@ If you like cybersecurity automation, homelab engineering, decentralized social 
 
 - **Cybersecurity Engineer (CISSP)** working across IAM, EDR, SOAR, ZTNA, SASE, and cloud security  
 - **Primarily self-taught** with almost no formal education just homelabbing, curiosity, and hands-on experience  
-- Builder of security bots that detect **typosquat domains**, **service outages**, **RFM devices**, and more  
-- Advocate of **end-to-end encryption**, **zero trust**, and **owning your infrastructure**  
-- Firm believer in **right to repair** and **privacy rights**  
+- Builder of security bots that detect typosquat domains, service outages, RFM devices, and more  
+- Advocate of end-to-end encryption, zero trust, and owning your infrastructure  
+- Firm believer in right to repair and privacy rights  
 - Passionate about threat modeling, OSINT, and telecommunications security (SS7, IMSI catchers, Stingrays)
 
 **My Linux Setup:**  
-**Daily Drivers:** **Pop!_OS**, **Parrot OS**, and **Debian**  
-**Hardware:** Hand-built desktops + laptops by **Tuxedo Computers**, **System76**, and **MNT**  
-**Server OS:** **Ubuntu** for production servers  
-**Enterprise Experience:** Comfortable with **RHEL-based distros** (Rocky, AlmaLinux, CentOS) from work
+**Daily Drivers:** Pop!_OS, Parrot OS, and Debian  
+**Hardware:** Hand-built desktops + laptops by Tuxedo Computers, System76, and MNT  
+**Server OS:** Ubuntu for production servers  
+**Enterprise Experience:** Comfortable with RHEL-based distros (Rocky, AlmaLinux, CentOS) from work
 
 ---
 
@@ -74,15 +74,15 @@ Building, breaking, and learning in a production-grade home lab environment:
 
 - **pfSense** + **Suricata** IDS/IPS + **pfBlockerNG** on VLAN-segmented networks  
 - **Grafana** dashboards for SIEM monitoring of pfSense, Unifi switches & APs, and infrastructure metrics  
-- **Single Board Computers (SBCs)** for power-efficient computing: **Raspberry Pi** (4 & 5), **Pine64**, and various other devices  
+- **Single Board Computers (SBCs)** for power-efficient computing: Raspberry Pi (4 & 5), Pine64, and various other devices  
 - **Coming soon:** 5× Pi 5 Kubernetes cluster for container orchestration and bot infrastructure  
 - **Second-hand PCs** repurposed whenever possible to reduce e-waste and promote sustainability  
 - **Synology NAS** with NUT (Network UPS Tools) monitoring and notifications  
 - **Meshtastic nodes**, LoRa experiments, and custom antenna builds  
-- **SDR (Software Defined Radio)**: ADS-B aircraft tracking, UAT weather, and RF signal analysis  
-- **Self-hosted services**: Mastodon instance, Matrix homeserver, BlueSky PDS (coming soon), link aggregator, and more
+- **SDR (Software Defined Radio):** ADS-B aircraft tracking, UAT weather, and RF signal analysis  
+- **Self-hosted services:** Mastodon instance, Matrix homeserver, BlueSky PDS (coming soon), link aggregator, and more
 
-This lab isn't just a playground — it's a **learning platform** where I test security tools, practice incident response, and develop automation that I share with the community. I prioritize energy efficiency and sustainability by using SBCs and repurposed hardware wherever practical.
+This lab isn't just a playground — it's a learning platform where I test security tools, practice incident response, and develop automation that I share with the community. I prioritize energy efficiency and sustainability by using SBCs and repurposed hardware wherever practical.
 
 ---
 
@@ -92,8 +92,8 @@ This lab isn't just a playground — it's a **learning platform** where I test s
 Automated NOAA space-weather bot providing real-time alerts for HF radio propagation, aurora forecasts, D-Region absorption, and solar X-ray flux updates.  
 
 **Platforms:**  
-- **Bluesky:** [@solarstormscout.bsky.social](https://bsky.app/profile/solarstormscout.bsky.social)  
-- **Mastodon:** [@solarstormscout@social.chiefgyk3d.com](https://social.chiefgyk3d.com/@solarstormscout)  
+- Bluesky: [@solarstormscout.bsky.social](https://bsky.app/profile/solarstormscout.bsky.social)  
+- Mastodon: [@solarstormscout@social.chiefgyk3d.com](https://social.chiefgyk3d.com/@solarstormscout)  
 
 **Repo:** https://github.com/ChiefGyk3D/solarstorm_scout
 
