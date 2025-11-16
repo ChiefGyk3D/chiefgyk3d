@@ -1,7 +1,6 @@
 # 👋 Hey, I'm Moshe aka **ChiefGyk3D**
 
-### Cybersecurity Engineer | Linux Nerd | Radio & Networks  
-### Open-Source Builder | Content Creator
+### Cybersecurity Engineer | Linux Nerd | Radio | Open-Source Builder | Content Creator
 
 #### 🌐 Find me on
 
@@ -134,13 +133,12 @@ Automated security advisory and OS patch notification bot. Keeps your systems se
 ## 📊 GitHub Stats
 
 <div align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=ChiefGyk3D&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=1F6FEB&text_color=C9D1D9"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ChiefGyk3D&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9"/>
+</div>
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ChiefGyk3D&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=1F6FEB&text_color=C9D1D9)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ChiefGyk3D&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9)
-
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=ChiefGyk3D&theme=tokyonight&hide_border=true&background=0D1117&ring=58A6FF&fire=FF6B6B&currStreakLabel=C9D1D9)
-
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ChiefGyk3D&theme=tokyonight&hide_border=true&background=0D1117&ring=58A6FF&fire=FF6B6B&currStreakLabel=C9D1D9"/>
 </div>
 
 ---
