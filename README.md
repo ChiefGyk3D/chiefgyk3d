@@ -82,7 +82,7 @@ Building, breaking, and learning in a production-grade home lab environment:
 - **SDR (Software Defined Radio):** ADS-B aircraft tracking, UAT weather, and RF signal analysis  
 - **Self-hosted services:** Mastodon instance, Matrix homeserver, BlueSky PDS (coming soon), link aggregator, and more
 
-This lab isn't just a playground — it's a learning platform where I test security tools, practice incident response, and develop automation that I share with the community. I prioritize energy efficiency and sustainability by using SBCs and repurposed hardware wherever practical.
+This lab isn't just a playground, it's a learning platform where I test security tools, practice incident response, and develop automation that I share with the community. I prioritize energy efficiency and sustainability by using SBCs and repurposed hardware wherever practical.
 
 ---
 
