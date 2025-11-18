@@ -1,6 +1,6 @@
 # 👋 Hey, I'm Moshe aka **ChiefGyk3D**
 
-### Cybersecurity Engineer | Linux Nerd | Radio | Open-Source Builder | Content Creator
+### Cybersecurity Engineer | Linux Nerd | Ham Radio Operator | Open-Source Builder | Content Creator
 
 #### 🌐 Find me on
 
