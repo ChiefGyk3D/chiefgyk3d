@@ -144,6 +144,13 @@ Network split tunneling tool for routing specific applications through different
 
 ---
 
+### 🛡️ **pfSense SIEM Stack**
+Comprehensive pfSense deployment, monitoring, and security knowledge base: From basic configuration to advanced SIEM infrastructure, IDS/IPS optimization, and network security automation.  
+
+**Repo:** https://github.com/ChiefGyk3D/pfsense-siem-stack
+
+---
+
 ## 📊 GitHub Stats
 
 <div align="center">
