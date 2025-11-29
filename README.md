@@ -88,6 +88,34 @@ This lab isn't just a playground, it's a learning platform where I test security
 
 ## 🐧 Open-Source Projects
 
+### 🕵️‍♂️ **Typo Sniper**
+Automated typosquatting detection system leveraging dnstwist, WHOIS lookups, and cloud automation to identify and alert on potential domain-based attacks.  
+
+**Repo:** https://github.com/ChiefGyk3D/typo-sniper
+
+---
+
+### 🛡️ **pfSense SIEM Stack**
+Comprehensive pfSense deployment, monitoring, and security knowledge base: From basic configuration to advanced SIEM infrastructure, IDS/IPS optimization, and network security automation.  
+
+**Repo:** https://github.com/ChiefGyk3D/pfsense-siem-stack
+
+---
+
+### 🔀 **Split Tunnel Switch**
+Network split tunneling tool for routing specific applications through different network interfaces or VPN connections.  
+
+**Repo:** https://github.com/ChiefGyk3D/split_tunnel_switch
+
+---
+
+### 🎵 **Pipewire Sink**
+PipeWire audio sink switcher for Linux. Easily manage and switch between audio output devices with a simple, lightweight tool.  
+
+**Repo:** https://github.com/ChiefGyk3D/pipewire_sink
+
+---
+
 ### 🔥 **SolarStorm Scout**
 Automated NOAA space-weather bot providing real-time alerts for HF radio propagation, aurora forecasts, D-Region absorption, and solar X-ray flux updates.  
 
@@ -116,13 +144,6 @@ Automation suite for cross-platform content distribution. Posts live streams, vi
 
 ---
 
-### 🕵️‍♂️ **Typo Sniper**
-Automated typosquatting detection system leveraging dnstwist, WHOIS lookups, and cloud automation to identify and alert on potential domain-based attacks.  
-
-**Repo:** https://github.com/ChiefGyk3D/typo-sniper
-
----
-
 ### 🛠️ **Patch Gremlin**
 Automated security advisory and OS patch notification bot. Keeps your systems secure by alerting you to critical updates across multiple platforms.  
 
@@ -130,24 +151,10 @@ Automated security advisory and OS patch notification bot. Keeps your systems se
 
 ---
 
-### 🎵 **Pipewire Sink**
-PipeWire audio sink switcher for Linux. Easily manage and switch between audio output devices with a simple, lightweight tool.  
+### 😂 **Yo Mama as a Service**
+A humorous API service delivering classic "Yo Mama" jokes on demand. Built for fun and learning API development.  
 
-**Repo:** https://github.com/ChiefGyk3D/pipewire_sink
-
----
-
-### 🔀 **Split Tunnel Switch**
-Network split tunneling tool for routing specific applications through different network interfaces or VPN connections.  
-
-**Repo:** https://github.com/ChiefGyk3D/split_tunnel_switch
-
----
-
-### 🛡️ **pfSense SIEM Stack**
-Comprehensive pfSense deployment, monitoring, and security knowledge base: From basic configuration to advanced SIEM infrastructure, IDS/IPS optimization, and network security automation.  
-
-**Repo:** https://github.com/ChiefGyk3D/pfsense-siem-stack
+**Repo:** https://github.com/ChiefGyk3D/yomama-as-a-service
 
 ---
 
