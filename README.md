@@ -140,7 +140,7 @@ Automation suite for cross-platform content distribution. Posts live streams, vi
 **Repos:**  
 - https://github.com/ChiefGyk3D/stream-daemon  
 - https://github.com/ChiefGyk3D/star-daemon  
-- https://github.com/ChiefGyk3D/boontube-daemon
+- https://github.com/ChiefGyk3D/boon-tube-daemon
 
 ---
 
