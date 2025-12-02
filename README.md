@@ -174,7 +174,7 @@ A humorous API service delivering classic "Yo Mama" jokes on demand. Built for f
 </div>
 
 <div align="center">
-  <img src="https://github-readme-streak-stats-fhfiap706-chiefgyk3ds-projects.vercel.app/?user=ChiefGyk3D&theme=tokyonight&hide_border=true&background=0D1117&ring=58A6FF&fire=FF6B6B&currStreakLabel=C9D1D9"/>
+  <img src="https://github-readme-streak-stats-fhfiap706-chiefgyk3ds-projects.vercel.app/api?user=ChiefGyk3D&theme=tokyonight&hide_border=true&background=0D1117&ring=58A6FF&fire=FF6B6B&currStreakLabel=C9D1D9"/>
 </div>
 
 ---
