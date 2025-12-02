@@ -102,6 +102,13 @@ Comprehensive pfSense deployment, monitoring, and security knowledge base: From 
 
 ---
 
+### 🤖 **FrankenLLM**
+Local AI inference platform combining multiple open-source LLMs with a unified interface. Self-hosted, privacy-focused solution for running large language models on your own hardware.  
+
+**Repo:** https://github.com/ChiefGyk3D/FrankenLLM
+
+---
+
 ### 🔀 **Split Tunnel Switch**
 Network split tunneling tool for routing specific applications through different network interfaces or VPN connections.  
 
