@@ -74,6 +74,7 @@ Building, breaking, and learning in a production-grade home lab environment:
 
 - **pfSense** + **Suricata** IDS/IPS + **pfBlockerNG** on VLAN-segmented networks  
 - **Grafana** dashboards for SIEM monitoring of pfSense, Unifi switches & APs, and infrastructure metrics  
+- **FrankenLLM Server** running dual GPUs: Nvidia RTX 5060Ti 16GB and Nvidia RTX 3050 8GB for simultaneous multi-model AI inference  
 - **Single Board Computers (SBCs)** for power-efficient computing: Raspberry Pi (4 & 5), Pine64, and various other devices  
 - **Coming soon:** 5× Pi 5 Kubernetes cluster for container orchestration and bot infrastructure  
 - **Second-hand PCs** repurposed whenever possible to reduce e-waste and promote sustainability  
@@ -103,7 +104,7 @@ Comprehensive pfSense deployment, monitoring, and security knowledge base: From 
 ---
 
 ### 🤖 **FrankenLLM**
-Local AI inference platform combining multiple open-source LLMs with a unified interface. Self-hosted, privacy-focused solution for running large language models on your own hardware.  
+Local AI inference platform combining multiple open-source LLMs with a unified interface. Designed for running multiple GPUs and models simultaneously. Self-hosted, privacy-focused solution for running large language models on your own hardware.  
 
 **Repo:** https://github.com/ChiefGyk3D/FrankenLLM
 
