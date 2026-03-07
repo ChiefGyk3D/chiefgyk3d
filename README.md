@@ -103,6 +103,20 @@ Comprehensive pfSense deployment, monitoring, and security knowledge base: From 
 
 ---
 
+### 🐳 **SIEM Docker Stack**
+Production-ready, fully Dockerized SIEM/SOC stack with hot/warm tiering for home labs and SMBs. Includes OpenSearch (2-node cluster), Wazuh EDR, Grafana dashboards, Logstash, Prometheus, InfluxDB, Syslog-ng, UniFi Poller, and automated setup scripts.  
+
+**Repo:** https://github.com/ChiefGyk3D/siem-docker-stack
+
+---
+
+### ⛏️ **PiNodeXMR Grafana Dashboard**
+Monero node monitoring dashboard for Grafana with a custom monerod exporter. Tracks sync status, network hashrate, mempool, peer connections, and system health for PiNodeXMR devices via Prometheus.  
+
+**Repo:** https://github.com/ChiefGyk3D/PiNodeXMR_Grafana_Dashboard
+
+---
+
 ### 🤖 **FrankenLLM**
 Local AI inference platform combining multiple open-source LLMs with a unified interface. Designed for running multiple GPUs and models simultaneously. Self-hosted, privacy-focused solution for running large language models on your own hardware.  
 
