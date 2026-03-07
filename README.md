@@ -70,20 +70,41 @@ Whether you're just starting out or leveling up your skills, my content is desig
 
 ## 🧪 My Home Lab Stack
 
-Building, breaking, and learning in a production-grade home lab environment:
+Building, breaking, and learning in a production-grade home lab environment.
 
-- **pfSense** + **Suricata** IDS/IPS + **pfBlockerNG** on VLAN-segmented networks  
-- **Grafana** dashboards for SIEM monitoring of pfSense, Unifi switches & APs, and infrastructure metrics  
-- **FrankenLLM Server** running dual GPUs: Nvidia RTX 5060Ti 16GB and Nvidia RTX 3050 8GB for simultaneous multi-model AI inference  
-- **Single Board Computers (SBCs)** for power-efficient computing: Raspberry Pi (4 & 5), Pine64, and various other devices  
+### 🔒 Network & Security
+
+- **Firewall:** Supermicro E300-8D (Intel Xeon D-1518, 32 GB DDR4 ECC, 256 GB NVMe) running **pfSense** + **Suricata** IDS/IPS + **pfBlockerNG** on VLAN-segmented networks, with dual Intel I226 2.5 GbE NICs added for WAN future-proofing  
+- **Switching & Wi-Fi:** UniFi managed switches and access points — telemetry collected by **[UniFi Poller](https://unpoller.com/)** into Grafana/InfluxDB, device logs piped to **Wazuh** for EDR alerting  
+
+### 📊 SIEM / SOC Server
+
+- **Hardware:** Supermicro SuperServer 5019A-FTN4 (Intel Atom C3758, 8 cores, 64 GB DDR4 ECC)  
+- **Storage:** 240 GB SATA SSD (OS) · 1 TB NVMe (hot data, 0-30 days) · 2 TB SATA SSD (warm data, 30-365 days)  
+- **Stack:** Dockerized — OpenSearch (hot/warm cluster), Wazuh EDR, Grafana, Logstash, Prometheus, InfluxDB, Syslog-ng, UniFi Poller, Portainer  
+- **Repos:** [siem-docker-stack](https://github.com/ChiefGyk3D/siem-docker-stack) (server side) · [pfsense-siem-stack](https://github.com/ChiefGyk3D/pfsense-siem-stack) (pfSense side)  
+
+### 🤖 AI Inference
+
+- **FrankenLLM Server** running dual GPUs: Nvidia RTX 5060 Ti 16 GB + Nvidia RTX 3050 8 GB for simultaneous multi-model AI inference  
+
+### 🖥️ Compute & Storage
+
+- **Single Board Computers (SBCs):** Raspberry Pi (4 & 5), Pine64, and various other devices for power-efficient computing  
 - **Coming soon:** 5× Pi 5 Kubernetes cluster for container orchestration and bot infrastructure  
 - **Second-hand PCs** repurposed whenever possible to reduce e-waste and promote sustainability  
 - **Synology NAS** with NUT (Network UPS Tools) monitoring and notifications  
+
+### 📡 Radio & SDR
+
 - **Meshtastic nodes**, LoRa experiments, and custom antenna builds  
 - **SDR (Software Defined Radio):** ADS-B aircraft tracking, UAT weather, and RF signal analysis  
-- **Self-hosted services:** Mastodon instance, Matrix homeserver, BlueSky PDS (coming soon), link aggregator, and more
 
-This lab isn't just a playground, it's a learning platform where I test security tools, practice incident response, and develop automation that I share with the community. I prioritize energy efficiency and sustainability by using SBCs and repurposed hardware wherever practical.
+### 🌐 Self-Hosted Services
+
+- Mastodon instance, Matrix homeserver, BlueSky PDS (coming soon), link aggregator, and more  
+
+This lab isn't just a playground — it's a learning platform where I test security tools, practice incident response, and develop automation that I share with the community. I prioritize energy efficiency and sustainability by using SBCs and repurposed hardware wherever practical.
 
 ---
 
