@@ -131,6 +131,13 @@ Production-ready, fully Dockerized SIEM/SOC stack with hot/warm tiering for home
 
 ---
 
+### 🌉 **JumpCloud Wazuh Bridge**
+Integration bridge for forwarding and normalizing JumpCloud events into Wazuh pipelines for centralized visibility, correlation, and alerting in SIEM workflows.  
+
+**Repo:** https://github.com/ChiefGyk3D/jumpcloud-wazuh-bridge
+
+---
+
 ### ⛏️ **PiNodeXMR Grafana Dashboard**
 Monero node monitoring dashboard for Grafana with a custom monerod exporter. Tracks sync status, network hashrate, mempool, peer connections, and system health for PiNodeXMR devices via Prometheus.  
 
