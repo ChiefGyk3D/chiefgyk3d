@@ -12,6 +12,7 @@
 [![Twitch](https://img.shields.io/badge/-Twitch-9146FF?style=for-the-badge&logo=twitch&logoColor=white)](https://twitch.tv/chiefgyk3d)
 [![Kick](https://img.shields.io/badge/-Kick-53FC18?style=for-the-badge&logo=kickstarter&logoColor=black)](https://kick.com/chiefgyk3d)
 [![TikTok](https://img.shields.io/badge/-TikTok-000000?style=for-the-badge&logo=tiktok&logoColor=white)](https://tiktok.com/@chiefgyk3d)
+[![Instagram](https://img.shields.io/badge/-Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/chiefgyk3d/)
 
 #### ❤️ Support my work
 
