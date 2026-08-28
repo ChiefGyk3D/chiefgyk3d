@@ -60,7 +60,11 @@ jobs:
       - name: Generate streak card
         uses: DenverCoder1/github-readme-streak-stats@51cfb8879073b4c016ce6286016de0b14d179077 # v1.7.0
         with:
-          options: "user=${{ github.repository_owner }}&theme=tokyonight&hide_border=true&background=0D1117&ring=58A6FF&fire=FF6B6B&currStreakLabel=C9D1D9"
+          # Every colour is set explicitly: this card ignores `theme` for the section
+          # dividers, which otherwise stay #E4E2E2 and glare white on a dark card.
+          # disable_animations follows the streak project's own Actions example --
+          # a committed static SVG must not need an animation to become visible.
+          options: "user=${{ github.repository_owner }}&hide_border=true&disable_animations=true&background=0D1117&stroke=30363D&ring=58A6FF&fire=FF6B6B&currStreakNum=C9D1D9&sideNums=C9D1D9&currStreakLabel=58A6FF&sideLabels=58A6FF&dates=8B949E"
           path: profile/streak.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
