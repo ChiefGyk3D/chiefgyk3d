@@ -68,11 +68,6 @@ jobs:
           path: profile/streak.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Generate contribution snake
-        uses: Platane/snk@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3.5.0
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: profile/snake.svg?palette=github-dark&color_snake=#58A6FF
 
 
 

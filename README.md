@@ -271,10 +271,6 @@ A humorous API service delivering classic "Yo Mama" jokes on demand. Built for f
   <img alt="Contribution streak" src="./profile/streak.svg"/>
 </div>
 
-<div align="center">
-  <img alt="Contribution activity over the past year" src="./profile/snake.svg"/>
-</div>
-
 <sub>Generated once a day by <a href="./.github/workflows/readme-cards.yml">a GitHub Action</a> and committed to this repo — nothing is fetched when you load this page, and nothing can rate limit it.</sub>
 
 ---
