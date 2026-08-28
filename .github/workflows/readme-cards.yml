@@ -1,10 +1,9 @@
 name: Update README cards
 
-# Generates the profile stat cards as static SVGs and commits them to this repo.
+# Generates every profile card as a static SVG and commits it to this repo.
 # Nothing is fetched when someone views the profile — GitHub serves the committed
-# files. The GitHub API is only ever called from inside this workflow, authenticated
-# with GITHUB_TOKEN (5000 req/hr), so the cards cannot be rate limited the way a
-# per-request Vercel instance can.
+# files. The GitHub API is only ever called from inside this workflow, so the cards
+# cannot be rate limited the way a per-request hosted instance can.
 
 on:
   schedule:
@@ -23,17 +22,27 @@ concurrency:
   group: readme-cards
   cancel-in-progress: false
 
+env:
+  # Shared palette, so every card stays visually consistent. Change it once here.
+  THEME: "theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=1F6FEB&text_color=C9D1D9"
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          # GITHUB_TOKEN by default. If the optional CARDS_TOKEN secret exists, the
+          # push is attributed to a human account instead — see "Keeping the daily
+          # schedule alive" in the workflow notes below.
+          token: ${{ secrets.CARDS_TOKEN || github.token }}
 
+      # ---- Overview ------------------------------------------------------------
       - name: Generate stats card
         uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2.0.2
         with:
           card: stats
-          options: "username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&rank_icon=percentile&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=1F6FEB&text_color=C9D1D9&ring_color=58A6FF"
+          options: "username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&rank_icon=percentile&ring_color=58A6FF&${{ env.THEME }}"
           path: profile/stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -41,24 +50,68 @@ jobs:
         uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2.0.2
         with:
           card: top-langs
-          options: "username=${{ github.repository_owner }}&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9"
+          options: "username=${{ github.repository_owner }}&layout=compact&langs_count=8&${{ env.THEME }}"
           path: profile/top-langs.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Generate pin card - Hammunition
+      # ---- Activity ------------------------------------------------------------
+      # Streak is a separate project (github-stats-extended has no streak card), but
+      # it ships its own composite action, so it runs here rather than on Vercel.
+      - name: Generate streak card
+        uses: DenverCoder1/github-readme-streak-stats@51cfb8879073b4c016ce6286016de0b14d179077 # v1.7.0
+        with:
+          options: "user=${{ github.repository_owner }}&theme=tokyonight&hide_border=true&background=0D1117&ring=58A6FF&fire=FF6B6B&currStreakLabel=C9D1D9"
+          path: profile/streak.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate contribution snake
+        uses: Platane/snk@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3.5.0
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: profile/snake.svg?palette=github-dark&color_snake=#58A6FF
+
+      # ---- Pinned repositories -------------------------------------------------
+      - name: Generate pin cards
         uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2.0.2
         with:
           card: pin
-          options: "username=${{ github.repository_owner }}&repo=Hammunition&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=1F6FEB&text_color=C9D1D9"
+          options: "username=${{ github.repository_owner }}&repo=Hammunition&${{ env.THEME }}"
           path: profile/pin-hammunition.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Generate pin card - Hammunition Hill
-        uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2.0.2
+      - uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2.0.2
         with:
           card: pin
-          options: "username=${{ github.repository_owner }}&repo=hammunition-hill&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=1F6FEB&text_color=C9D1D9"
+          options: "username=${{ github.repository_owner }}&repo=hammunition-hill&${{ env.THEME }}"
           path: profile/pin-hammunition-hill.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2.0.2
+        with:
+          card: pin
+          options: "username=${{ github.repository_owner }}&repo=typo-sniper&${{ env.THEME }}"
+          path: profile/pin-typo-sniper.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2.0.2
+        with:
+          card: pin
+          options: "username=${{ github.repository_owner }}&repo=siem-docker-stack&${{ env.THEME }}"
+          path: profile/pin-siem-docker-stack.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2.0.2
+        with:
+          card: pin
+          options: "username=${{ github.repository_owner }}&repo=solarstorm_scout&${{ env.THEME }}"
+          path: profile/pin-solarstorm-scout.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2.0.2
+        with:
+          card: pin
+          options: "username=${{ github.repository_owner }}&repo=penguin-overlord&${{ env.THEME }}"
+          path: profile/pin-penguin-overlord.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Commit cards
