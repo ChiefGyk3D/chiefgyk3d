@@ -268,11 +268,10 @@ A humorous API service delivering classic "Yo Mama" jokes on demand. Built for f
 </div>
 
 <div align="center">
-  <a href="https://github.com/ChiefGyk3D/Hammunition"><img alt="Hammunition" src="./profile/pin-hammunition.svg"/></a>
-  <a href="https://github.com/ChiefGyk3D/hammunition-hill"><img alt="Hammunition Hill" src="./profile/pin-hammunition-hill.svg"/></a>
+  <img alt="Contribution streak" src="./profile/streak.svg"/>
 </div>
 
-<sub>Cards are generated once a day by <a href="./.github/workflows/readme-cards.yml">a GitHub Action</a> and committed to this repo — nothing is fetched when you load this page.</sub>
+<sub>Generated once a day by <a href="./.github/workflows/readme-cards.yml">a GitHub Action</a> and committed to this repo — nothing is fetched when you load this page, and nothing can rate limit it.</sub>
 
 ---
 
