@@ -275,24 +275,7 @@ A humorous API service delivering classic "Yo Mama" jokes on demand. Built for f
   <img alt="Contribution activity over the past year" src="./profile/snake.svg"/>
 </div>
 
-### 📌 Pinned Work
-
-<div align="center">
-  <a href="https://github.com/ChiefGyk3D/Hammunition"><img alt="Hammunition" src="./profile/pin-hammunition.svg"/></a>
-  <a href="https://github.com/ChiefGyk3D/hammunition-hill"><img alt="Hammunition Hill" src="./profile/pin-hammunition-hill.svg"/></a>
-</div>
-
-<div align="center">
-  <a href="https://github.com/ChiefGyk3D/typo-sniper"><img alt="Typo Sniper" src="./profile/pin-typo-sniper.svg"/></a>
-  <a href="https://github.com/ChiefGyk3D/siem-docker-stack"><img alt="SIEM Docker Stack" src="./profile/pin-siem-docker-stack.svg"/></a>
-</div>
-
-<div align="center">
-  <a href="https://github.com/ChiefGyk3D/solarstorm_scout"><img alt="SolarStorm Scout" src="./profile/pin-solarstorm-scout.svg"/></a>
-  <a href="https://github.com/ChiefGyk3D/penguin-overlord"><img alt="Penguin Overlord" src="./profile/pin-penguin-overlord.svg"/></a>
-</div>
-
-<sub>Every card here is generated once a day by <a href="./.github/workflows/readme-cards.yml">a GitHub Action</a> and committed to this repo — nothing is fetched when you load this page, and nothing can rate limit it.</sub>
+<sub>Generated once a day by <a href="./.github/workflows/readme-cards.yml">a GitHub Action</a> and committed to this repo — nothing is fetched when you load this page, and nothing can rate limit it.</sub>
 
 ---
 

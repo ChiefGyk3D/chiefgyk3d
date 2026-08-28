@@ -74,55 +74,18 @@ jobs:
           github_user_name: ${{ github.repository_owner }}
           outputs: profile/snake.svg?palette=github-dark&color_snake=#58A6FF
 
-      # ---- Pinned repositories -------------------------------------------------
-      - name: Generate pin cards
-        uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2.0.2
-        with:
-          card: pin
-          options: "username=${{ github.repository_owner }}&repo=Hammunition&${{ env.THEME }}"
-          path: profile/pin-hammunition.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
 
-      - uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2.0.2
-        with:
-          card: pin
-          options: "username=${{ github.repository_owner }}&repo=hammunition-hill&${{ env.THEME }}"
-          path: profile/pin-hammunition-hill.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
 
-      - uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2.0.2
-        with:
-          card: pin
-          options: "username=${{ github.repository_owner }}&repo=typo-sniper&${{ env.THEME }}"
-          path: profile/pin-typo-sniper.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
 
-      - uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2.0.2
-        with:
-          card: pin
-          options: "username=${{ github.repository_owner }}&repo=siem-docker-stack&${{ env.THEME }}"
-          path: profile/pin-siem-docker-stack.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
 
-      - uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2.0.2
-        with:
-          card: pin
-          options: "username=${{ github.repository_owner }}&repo=solarstorm_scout&${{ env.THEME }}"
-          path: profile/pin-solarstorm-scout.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2.0.2
-        with:
-          card: pin
-          options: "username=${{ github.repository_owner }}&repo=penguin-overlord&${{ env.THEME }}"
-          path: profile/pin-penguin-overlord.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Commit cards
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add profile/*.svg
+          # -A, not profile/*.svg: a glob only matches files that still exist, so
+          # removing a card step above would strand its SVG in the repo forever.
+          git add -A profile/
           git diff --staged --quiet && echo "No card changes." && exit 0
           git commit -m "chore: refresh README stat cards"
           git push
