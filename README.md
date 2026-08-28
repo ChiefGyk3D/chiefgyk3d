@@ -127,10 +127,10 @@ Local-first ham radio dashboard that runs on your own machine, on your own netwo
 
 ---
 
-### 📶 **uConsole BLE Stalker**
-Bluetooth Low Energy foxhunting and spam-signal tooling for the ClockworkPi uConsole — a portable rig for hands-on wireless security research and RF education in the field.
+### 📶 **Skid Finder**
+Defensive BLE monitoring for conference floors. Detects scripted Bluetooth Low Energy spam and flood tooling — the kind the skids run at DEF CON and BSides — and lets you foxhunt the source. Tuned for the ClockworkPi uConsole, but runs on other Linux devices too.
 
-**Repo:** https://github.com/ChiefGyk3D/Uconsole-BLE-Stalker
+**Repo:** https://github.com/ChiefGyk3D/skid-finder
 
 ---
 
@@ -218,6 +218,13 @@ Setup scripts and configuration for Kdenlive on Linux with GPU acceleration and 
 
 ---
 
+### 🎮 **Modded OpenMW Build**
+Reproducible setup for a modded OpenMW 0.50 Morrowind install on Linux, built on a Tamriel Rebuilt vanilla-plus baseline with a documented, layered mod install order rather than a folder of mystery files.
+
+**Repo:** https://github.com/ChiefGyk3D/morrowind-cg3d
+
+---
+
 ### 🔥 **SolarStorm Scout**
 Automated NOAA space-weather bot providing real-time alerts for HF radio propagation, aurora forecasts, D-Region absorption, and solar X-ray flux updates.  
 
@@ -246,10 +253,38 @@ Automation suite for cross-platform content distribution. Posts live streams, vi
 
 ---
 
+### 📣 **Hypeman**
+The shared core behind the daemon family. A hype man's whole job is announcing you loudly to a crowd — this library does exactly that for Bluesky, Mastodon, Discord and Matrix, so Stream Daemon, Star Daemon and Boon Tube Daemon don't each reinvent posting.
+
+**Repo:** https://github.com/ChiefGyk3D/hypeman
+
+---
+
+### 🎨 **Mastodon Tweaks**
+Custom server stylesheets for Mastodon, rebased on Mastodon Bird UI v4.0.0. Posting and appearance variants maintained for my own instance.
+
+**Repo:** https://github.com/ChiefGyk3D/Mastodon_Tweaks
+
+---
+
 ### 🛠️ **Patch Gremlin**
 Automated security advisory and OS patch notification bot. Keeps your systems secure by alerting you to critical updates across multiple platforms.  
 
 **Repo:** https://github.com/ChiefGyk3D/Patch-Gremlin
+
+---
+
+### 💰 **Budgeting Tools**
+`finplan` — one command covering budgets, expense tracking, pay calendars, savings goals, debt payoff, mortgages, refinancing, investments, retirement and net worth, all sharing a single financial engine and the same input validation.
+
+**Repo:** https://github.com/ChiefGyk3D/budgeting_tools
+
+---
+
+### 🗓️ **Long Weekend Planner**
+Finds the long weekends hiding in your calendar and plans a year of PTO around them. Give it the holidays your employer actually observes and your PTO allowance, and it works out which ones are one day away from a four-day break.
+
+**Repo:** https://github.com/ChiefGyk3D/Long_Weekend_Planner
 
 ---
 
