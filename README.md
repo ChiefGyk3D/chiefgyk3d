@@ -101,6 +101,7 @@ Building, breaking, and learning in a production-grade home lab environment.
 
 - **Meshtastic nodes**, LoRa experiments, and custom antenna builds  
 - **SDR (Software Defined Radio):** ADS-B aircraft tracking, UAT weather, and RF signal analysis  
+- **Station tooling:** [Hammunition](https://github.com/ChiefGyk3D/Hammunition) builds the workstation, [Hammunition Hill](https://github.com/ChiefGyk3D/hammunition-hill) watches propagation from it  
 
 ### 🌐 Self-Hosted Services
 
@@ -111,6 +112,27 @@ This lab isn't just a playground — it's a learning platform where I test secur
 ---
 
 ## 🐧 Open-Source Projects
+
+### 📡 **Hammunition**
+Turns an existing Debian-family install into a full amateur radio, SDR, and RF experimentation workstation. A declarative YAML catalog of software and hardware, kept strictly separate from the Python engine that installs it — idempotent, `--dry-run` accurate, with a transaction log and honest per-distro capability reporting. Targets Parrot OS, Debian, Ubuntu, Kali, and Raspberry Pi OS.
+
+**Repo:** https://github.com/ChiefGyk3D/Hammunition
+
+---
+
+### 📊 **Hammunition Hill**
+Local-first ham radio dashboard that runs on your own machine, on your own network, and talks to nobody you did not name. Built on a snapshot architecture: a collector polls on a fixed schedule and writes atomic JSON, and the web server only ever reads bytes off disk — so no inbound request can steer an outbound fetch. Propagation, space weather, alerts, satellites, and callsign lookup.
+
+**Repo:** https://github.com/ChiefGyk3D/hammunition-hill
+
+---
+
+### 📶 **uConsole BLE Stalker**
+Bluetooth Low Energy foxhunting and spam-signal tooling for the ClockworkPi uConsole — a portable rig for hands-on wireless security research and RF education in the field.
+
+**Repo:** https://github.com/ChiefGyk3D/Uconsole-BLE-Stalker
+
+---
 
 ### 🕵️‍♂️ **Typo Sniper**
 Automated typosquatting detection system leveraging dnstwist, WHOIS lookups, and cloud automation to identify and alert on potential domain-based attacks.  
@@ -133,10 +155,24 @@ Production-ready, fully Dockerized SIEM/SOC stack with hot/warm tiering for home
 
 ---
 
+### 📈 **NetPulse**
+Continuous internet connection monitoring — throughput, latency, and jitter — with historical tracking, so when the line degrades you have the receipts to hand your ISP.
+
+**Repo:** https://github.com/ChiefGyk3D/netpulse
+
+---
+
 ### 🌉 **JumpCloud Wazuh Bridge**
 Integration bridge for forwarding and normalizing JumpCloud events into Wazuh pipelines for centralized visibility, correlation, and alerting in SIEM workflows.  
 
 **Repo:** https://github.com/ChiefGyk3D/jumpcloud-wazuh-bridge
+
+---
+
+### 🗄️ **The Great Infocon Recovery**
+Rebuilds and maintains a local time capsule of the infocon.org archive and DEF CON's media library, preserving decades of hacker history against link rot and quiet deletion.
+
+**Repo:** https://github.com/ChiefGyk3D/the-great-infocon-recovery
 
 ---
 
@@ -168,6 +204,20 @@ PipeWire audio sink switcher for Linux. Easily manage and switch between audio o
 
 ---
 
+### 🖥️ **NVIDIA Display Layout**
+Deterministic, NVIDIA-native display layout management for X11 — stops multi-monitor arrangements from rearranging themselves every time you reboot.
+
+**Repo:** https://github.com/ChiefGyk3D/nvidia-display-layout
+
+---
+
+### 🎬 **Kdenlive Tweaks**
+Setup scripts and configuration for Kdenlive on Linux with GPU acceleration and speech-to-text, tuned for an actual video production workflow rather than a default install.
+
+**Repo:** https://github.com/ChiefGyk3D/kdenlive-tweaks
+
+---
+
 ### 🔥 **SolarStorm Scout**
 Automated NOAA space-weather bot providing real-time alerts for HF radio propagation, aurora forecasts, D-Region absorption, and solar X-ray flux updates.  
 
@@ -190,16 +240,16 @@ Multi-feed Discord bot for radio operators and system administrators. Features N
 Automation suite for cross-platform content distribution. Posts live streams, video uploads, and repository stars to Twitch, YouTube, Kick, Mastodon, and Bluesky in real time.  
 
 **Repos:**  
-- https://github.com/ChiefGyk3D/stream-daemon  
-- https://github.com/ChiefGyk3D/star-daemon  
-- https://github.com/ChiefGyk3D/boon-tube-daemon
+- https://github.com/ChiefGyk3D/Stream-Daemon  
+- https://github.com/ChiefGyk3D/Star-Daemon  
+- https://github.com/ChiefGyk3D/Boon-Tube-Daemon
 
 ---
 
 ### 🛠️ **Patch Gremlin**
 Automated security advisory and OS patch notification bot. Keeps your systems secure by alerting you to critical updates across multiple platforms.  
 
-**Repo:** https://github.com/ChiefGyk3D/patch-gremlin
+**Repo:** https://github.com/ChiefGyk3D/Patch-Gremlin
 
 ---
 
@@ -213,13 +263,16 @@ A humorous API service delivering classic "Yo Mama" jokes on demand. Built for f
 ## 📊 GitHub Stats
 
 <div align="center">
-  <img height="180em" src="https://github-readme-stats-nu-indol-97.vercel.app/api?username=ChiefGyk3D&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=1F6FEB&text_color=C9D1D9"/>
-  <img height="180em" src="https://github-readme-stats-nu-indol-97.vercel.app/api/top-langs/?username=ChiefGyk3D&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9"/>
+  <img height="180em" alt="ChiefGyk3D's GitHub stats" src="./profile/stats.svg"/>
+  <img height="180em" alt="Most used languages" src="./profile/top-langs.svg"/>
 </div>
 
 <div align="center">
-  <img src="https://github-readme-streak-stats-fhfiap706-chiefgyk3ds-projects.vercel.app/api?user=ChiefGyk3D&theme=tokyonight&hide_border=true&background=0D1117&ring=58A6FF&fire=FF6B6B&currStreakLabel=C9D1D9"/>
+  <a href="https://github.com/ChiefGyk3D/Hammunition"><img alt="Hammunition" src="./profile/pin-hammunition.svg"/></a>
+  <a href="https://github.com/ChiefGyk3D/hammunition-hill"><img alt="Hammunition Hill" src="./profile/pin-hammunition-hill.svg"/></a>
 </div>
+
+<sub>Cards are generated once a day by <a href="./.github/workflows/readme-cards.yml">a GitHub Action</a> and committed to this repo — nothing is fetched when you load this page.</sub>
 
 ---
 
