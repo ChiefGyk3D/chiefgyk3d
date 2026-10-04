@@ -50,22 +50,24 @@ Grouped by what they're for. Every row is a repo you can clone today.
 
 ### 📡 Ham radio, RF & time
 
-The **Hammunition** family turns a stock Debian-family install into an amateur radio and SDR workstation, then keeps it fed, controlled, and on time. One engine, several small clients that only ever talk to it.
+The **Hammunition** family turns a stock Debian-family install into an amateur radio and SDR workstation, then keeps it fed, controlled, and on time. One engine with its own console, and several small clients that only ever talk to it.
 
 ```mermaid
 flowchart LR
-    console["hammunition-console<br/>full-screen TUI"] --> engine
+    subgraph engine["Hammunition"]
+        direction TB
+        console["hammunition console<br/>full-screen TUI"] --> cli["hammunition<br/>engine + YAML catalog"]
+    end
     tray["Hammunition Devices<br/>Plasma / Qt tray applet"] --> engine
     bunker["Hammunition Bunker<br/>LAN mirror on your NAS"] --> engine
-    engine["Hammunition<br/>engine + YAML catalog"] --> tether["GPS tether<br/>gpsd to NMEA on loopback"]
+    engine --> tether["GPS tether<br/>gpsd to NMEA on loopback"]
     engine --> hill["Hammunition Hill<br/>operating-position dashboard"]
 ```
 
 | Project | What it does |
 |---|---|
-| **[Hammunition](https://github.com/ChiefGyk3D/Hammunition)** | Turns an existing Debian-family install into a full amateur radio, SDR, and RF experimentation workstation. A declarative YAML catalog of software and hardware kept strictly separate from the Python engine that installs it: idempotent, `--dry-run` accurate, with a transaction log and honest per-distro capability reporting. Targets Parrot OS, Debian, Ubuntu, Kali, and Raspberry Pi OS. |
+| **[Hammunition](https://github.com/ChiefGyk3D/Hammunition)** | Turns an existing Debian-family install into a full amateur radio, SDR, and RF experimentation workstation. A declarative YAML catalog of software and hardware kept strictly separate from the Python engine that installs it: idempotent, `--dry-run` accurate, with a transaction log and honest per-distro capability reporting. Targets Parrot OS, Debian, Ubuntu, Kali, and Raspberry Pi OS. Ships its own full-screen terminal front end, `hammunition console`, which shows what is installed, what is wrong, and what to do next, and runs the engine's own commands for you with every action shown before it runs. |
 | **[Hammunition Hill](https://github.com/ChiefGyk3D/hammunition-hill)** | Hammunition builds the shack computer; Hill is what you put on the monitor above it, the high ground you watch the bands from. Six dashboards and twenty-eight panels that run on your own machine, on your own network, and talk to nobody you did not name. A collector polls on a fixed schedule and writes atomic JSON; the web server only ever reads bytes off disk, so no inbound request can steer an outbound fetch. Propagation, space weather, alerts, satellites, and callsign lookup. |
-| **[hammunition-console](https://github.com/ChiefGyk3D/hammunition-console)** | Full-screen terminal front end for the engine. Six screens (Home, Install, Station, Logs, Update, Help) that show what is installed, what is wrong, and what to do next, and run the engine's own commands for you. Every action is shown before it runs. No install logic of its own: it asks the engine. |
 | **[Hammunition Devices](https://github.com/ChiefGyk3D/hammunition-tray)** | Plasma 6 system-tray applet (with a Qt tray for Xfce, LXQt, LXDE, MATE, and Cinnamon) for parking and waking the radio devices Hammunition has catalogued, so a GNSS receiver stops drawing power all day without being unplugged. Also switches GPS services, the machine's radios, and GPS time mode. Never touches sysfs, never runs as root, one polkit prompt per action. |
 | **[Hammunition Bunker](https://github.com/ChiefGyk3D/hammunition-bunker)** | Keeps a verified copy of Hammunition's offline data (map regions, elevation tiles, reference files) on a NAS, fresh on a schedule, and serves it on your LAN. A field laptop then installs from the machine in the next room instead of the internet, checking every byte exactly as it would from the publisher. <sub>Early: built and tested against a fake engine, not yet run on a real NAS.</sub> |
 | **[Hammunition GPS tether](https://github.com/ChiefGyk3D/hammunition-gps-tether)** | Serves your GPS receiver's position from gpsd as NMEA on loopback only, for programs that can't talk to gpsd themselves: QMapShack, the offline browser map, and GeoClue so CoMaps knows where you are. Standard library only, runs as you, never as root. |
