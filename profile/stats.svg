@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">ChiefGyk3D&#39;s GitHub Stats, Rank: A+</title>
-        <desc id="descId">Total Stars Earned: 255, Total Commits  : 3784, Total PRs: 1124, Total Issues: 501, Contributed to (last year): 10</desc>
+        <desc id="descId">Total Stars Earned: 255, Total Commits  : 3817, Total PRs: 1125, Total Issues: 501, Contributed to (last year): 10</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 17.164626681796705;
+        stroke-dashoffset: 17.095149019368655;
       }
     }
   
