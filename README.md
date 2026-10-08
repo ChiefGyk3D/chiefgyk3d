@@ -74,7 +74,6 @@ flowchart LR
 | **[Mother Ticker](https://github.com/ChiefGyk3D/mother-ticker)** | GPS-disciplined stratum-1 NTP servers on Raspberry Pi 4, built as appliances: chrony steered by kernel PPS from a u-blox receiver, an RTC for a plausible boot time, a status TUI on the unit's own screen and over SSH, metrics export, and a host hardened like something other machines trust for time. <sub>Alpha: tested in CI against recorded gpsd and chrony output, not yet on the target hardware.</sub> |
 | **[SolarStorm Scout](https://github.com/ChiefGyk3D/solarstorm_scout)** | Automated NOAA space-weather bot with real-time alerts for HF propagation, aurora forecasts, D-region absorption, and solar X-ray flux. Live on [Bluesky](https://bsky.app/profile/solarstormscout.bsky.social) and [Mastodon](https://social.chiefgyk3d.com/@solarstormscout). |
 | **[Penguin Overlord](https://github.com/ChiefGyk3D/penguin-overlord)** | Multi-feed Discord bot for radio operators and sysadmins: NOAA propagation data, satellite tracking, ham radio contests, grid square calculations, weather alerts, and more. |
-| **[Meshtastic Map Tiles](https://github.com/ChiefGyk3D/Meshtastic-Map-Tiles)** | Downloads Thunderforest map tiles for chosen regions and zoom levels, resumable with a progress bar, in a layout the LilyGo T-Deck can use. Includes a KML-to-tiles helper that fetches tiles along waypoints and routes. |
 
 ### 🛡️ Security, blue team & SOC
 
