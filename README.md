@@ -116,12 +116,22 @@ flowchart LR
 |---|---|
 | **[Clouds Against Humanity](https://github.com/ChiefGyk3D/Clouds-Against-Humanity)** | A small, cheap, locked-down DigitalOcean environment built one costed stage at a time under a $30/month ceiling, with a CI cost gate that fails any PR pushing the bill past what was approved. Two redundant Twingate connectors, tag-attached deny-inbound firewalls, cloud-init hardening, mocked-provider `tofu test` suites, and credential-free pull request plans because the repo is public. The **[wiki](https://github.com/ChiefGyk3D/Clouds-Against-Humanity/wiki)** walks through every component with flowcharts, the threat model, the things that broke, and [why I use ZTNA instead of a VPN](https://github.com/ChiefGyk3D/Clouds-Against-Humanity/wiki/Why-ZTNA-Not-a-VPN) (short version: a VPN puts you *on the network* after one login and needs a box listening on the internet to do it, and both of those keep showing up in breach reports). |
 
+### 🧑‍💻 AI agents & team workflow
+
+How I run Claude, Codex, and Copilot as one team across a dozen repositories, written down with the measurements instead of the vibes. Both repos say plainly what is measured and what is only specified.
+
+| Project | What it does |
+|---|---|
+| **[Department of Internal Arguments](https://github.com/ChiefGyk3D/department-of-internal-arguments)** | Shared AI agent personas and the domain knowledge they load, written once and generated for Claude Code, GitHub Copilot, ChatGPT, and local models. Four process roles (implementer, reviewer, adversarial reviewer, transcriber) plus six domain packs you name per dispatch, because twelve personas change too many variables at once to ever tell which one helped. The name is the design: the best thing a second agent can do for the first one is disagree with it. Includes a pilot with real numbers, including a same-tier reviewer that approved work an external adversarial review then broke. |
+| **[Scrum Around and Find Out](https://github.com/ChiefGyk3D/scrum-around-and-find-out)** | A GitHub Project defined as code (`board.yaml`, applied and kept current by an Action and the `safo` CLI), agent routing from one maintainer's measurements that recommends an agent and dispatches nothing, and a playbook plus lessons wiki on why the team is run this way and what broke. Bring your own GitHub App, no PAT. |
+
 ### 🐧 Linux desktop & hardware
 
 Fixes for the laptops and desktops I actually run, so the next person doesn't have to rediscover them.
 
 | Project | What it does |
 |---|---|
+| **[Quectel USB Net](https://github.com/ChiefGyk3D/quectel-usbnet)** | Switches a Quectel modem between MBIM and QMI. Fixes the EM160R-GL that shows up in `lsusb`, binds `cdc_mbim`, and still gets `No modems were found` from `mmcli` because ModemManager 1.24 never finishes setting up the MBIM port. Prints the rollback command before it changes anything, and has a `--dry-run`. |
 | **[FrankenLLM](https://github.com/ChiefGyk3D/FrankenLLM)** | Local AI inference platform combining multiple open-source LLMs behind a unified interface, designed for running several GPUs and models at once. Self-hosted and privacy-focused. Runs my dual-GPU inference box. |
 | **[NVIDIA Display Layout](https://github.com/ChiefGyk3D/nvidia-display-layout)** | Deterministic, NVIDIA-native display layout management for X11. Stops multi-monitor arrangements from rearranging themselves every reboot. |
 | **[Browser Cleanup Tools](https://github.com/ChiefGyk3D/browser_cleanup_tools)** | Bash scripts that clean cache, sessions, and cruft from Linux browsers and mail clients across native, Flatpak, and Snap installs. v2 adds Betterfox-derived privacy and performance profiles, Chromium policy hardening, GPU-tuned compositor settings, and a profile manager with GPG-encrypted backups. |
