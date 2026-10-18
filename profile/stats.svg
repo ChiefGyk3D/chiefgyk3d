@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">ChiefGyk3D&#39;s GitHub Stats, Rank: A+</title>
-        <desc id="descId">Total Stars Earned: 524, Total Commits  : 4209, Total PRs: 1411, Total Issues: 578, Contributed to (last year): 10</desc>
+        <desc id="descId">Total Stars Earned: 538, Total Commits  : 4239, Total PRs: 1444, Total Issues: 707, Contributed to (last year): 11</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 9.856569353766282;
+        stroke-dashoffset: 9.627983302318038;
       }
     }
   
@@ -153,7 +153,7 @@
           Top
         </text>
         <text x="-5" y="12" alignment-baseline="central" dominant-baseline="central" text-anchor="middle" data-testid="percentile-rank-value" class="rank-percentile-text">
-          3.9%
+          3.8%
         </text>
       
         </g>
@@ -172,7 +172,7 @@
         x="224.01"
         y="12.5"
         data-testid="stars"
-      >524</text>
+      >538</text>
     </g>
   </g><g transform="translate(0, 25)">
     <g class="stagger" style="animation-delay: 600ms" transform="translate(25, 0)">
@@ -217,7 +217,7 @@
         x="224.01"
         y="12.5"
         data-testid="issues"
-      >578</text>
+      >707</text>
     </g>
   </g><g transform="translate(0, 100)">
     <g class="stagger" style="animation-delay: 1050ms" transform="translate(25, 0)">
@@ -232,7 +232,7 @@
         x="224.01"
         y="12.5"
         data-testid="contribs"
-      >10</text>
+      >11</text>
     </g>
   </g>
     </svg>
