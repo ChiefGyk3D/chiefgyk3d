@@ -38,15 +38,17 @@ I break things, fix things, automate everything, and talk about it on YouTube.
 | 🐧 **Desktop** | Pop!_OS, Parrot OS, and Debian as daily drivers on hand-built desktops and laptops from Tuxedo Computers, System76, and MNT. Ubuntu on production servers, RHEL-family (Rocky, AlmaLinux, CentOS) at work. |
 | 📡 **Radio** | Licensed amateur radio operator. SDR, Meshtastic, LoRa, antenna builds, and a growing toolchain for turning a Linux box into an RF workstation. |
 | 🏗️ **Homelab** | pfSense + Suricata at the edge, an OpenSearch/Wazuh SIEM, UniFi networking, a dual-GPU inference box, SBCs everywhere, as much repurposed hardware as practical, and a ZTNA-only [cloud extension](https://github.com/ChiefGyk3D/Clouds-Against-Humanity) built as code. [Details below.](#-my-home-lab-stack) |
+| 🌐 **Self-hosted** | My own Mastodon instance, Matrix homeserver, Pixelfed, link aggregator, and more. |
+| 🎥 **Content** | Tutorials, security breakdowns, and livestreams for the next generation of tech and security professionals. |
 | 🧠 **Cares about** | End-to-end encryption, zero trust, owning your infrastructure, right to repair, privacy rights, threat modeling, OSINT, and telecom security (SS7, IMSI catchers, Stingrays). |
 
-If you like cybersecurity automation, homelab engineering, decentralized social media, ham radio, or Linux on the desktop, you're in the right place.
+If you like cybersecurity automation, homelab engineering, decentralized social media, ham radio, or Linux on the desktop, you're in the right place. **Everything I build is open source.**
 
 ---
 
 ## 🐧 Open-Source Projects
 
-Everything below is a repo you can clone today. Start with the one most people come for, then browse by topic.
+Grouped by what they're for. Every row is a repo you can clone today, and the most-starred one comes first.
 
 ### ⭐ Start here: Clouds Against Humanity
 
@@ -275,3 +277,9 @@ Whether you're just starting out or leveling up, the goal is content that's acce
 
 Everything I build is open source. Fork anything, send PRs, open issues, or just say hi.
 Let's make the internet more secure and fun, one commit at a time. 🛡️
+
+---
+
+<div align="center">
+<sub>🔐 Security | 🐧 Linux | 📡 Radio | 🏗️ Homelab | 🎥 Content</sub>
+</div>
