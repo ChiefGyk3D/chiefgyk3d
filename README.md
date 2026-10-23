@@ -24,7 +24,46 @@ I break things, fix things, automate everything, and talk about it on YouTube.
 
 **🔗 All my links:** [links.chiefgyk3d.com](https://links.chiefgyk3d.com)
 
+**Jump to:** [⭐ Featured](#-featured-clouds-against-humanity) · [🧭 At a glance](#-at-a-glance) · [🐧 Projects](#-open-source-projects) · [🧪 Home lab](#-my-home-lab-stack) · [🎥 Content](#-content-creation)
+
 </div>
+
+---
+
+## ⭐ Featured: Clouds Against Humanity
+
+**My most-starred project, and the one I most want you to read.** A small, cheap, locked-down DigitalOcean environment that exists to teach cloud security, zero trust, DevSecOps, and infrastructure as code by building it in public. Every resource is OpenTofu, every apply goes through Spacelift with a human reading the plan first, every secret lives in Doppler, and the only way in is Twingate. **No droplet has a single public inbound port open**: no VPN, no bastion, no SSH on the internet.
+
+<div align="center">
+  <a href="https://github.com/ChiefGyk3D/Clouds-Against-Humanity"><img width="620" alt="Clouds Against Humanity stars and forks since the repository was created, as of 2026-10-23" src="./profile/cah-growth.png"/></a>
+</div>
+
+<sub>Stars measure attention, not use. Static snapshot as of 2026-10-23; the <a href="https://github.com/ChiefGyk3D/Clouds-Against-Humanity/wiki/Repository-Growth">Repository growth</a> page has the live numbers, plus weekly merged PRs and closed issues.</sub>
+
+```mermaid
+flowchart LR
+    me["Me + Twingate client"]:::you --> tg["Twingate<br/>per-resource access"]:::ctrl
+    conn["Connectors in a DO VPC<br/>outbound only"]:::cloud --> tg
+    me == "end-to-end encrypted" ==> conn
+    net["The internet"]:::ext -. "nothing listening" .-x conn
+    pr["PR + CI"]:::ctrl --> sl["Spacelift<br/>plan, confirm, apply"]:::ctrl --> conn
+    dp["Doppler"]:::secret --> sl
+
+    classDef you fill:#132a1f,stroke:#4ade80,color:#dcfce7
+    classDef ext fill:#3b1d1d,stroke:#f87171,color:#fde2e2
+    classDef ctrl fill:#1e1b3a,stroke:#a78bfa,color:#ede9fe
+    classDef cloud fill:#0f2a3d,stroke:#38bdf8,color:#e0f2fe
+    classDef secret fill:#3a2a0f,stroke:#fbbf24,color:#fef3c7
+```
+
+**The wiki is the real point.** Lessons, flowcharts, exercises, the threat model, and the things that broke the first time. Reading and exercises are free and always will be.
+
+- 🚀 **[Start here if you are new](https://github.com/ChiefGyk3D/Clouds-Against-Humanity/wiki/Start-Here-If-You-Are-New)**: cloud, Terraform, and zero trust from zero
+- 🛡️ **[Why ZTNA, not a VPN](https://github.com/ChiefGyk3D/Clouds-Against-Humanity/wiki/Why-ZTNA-Not-a-VPN)**: a VPN puts you *on the network* after one login and needs a box listening on the internet to do it; both keep showing up in breach reports
+- 💸 **Built under a $30/month ceiling**, with a CI cost gate that fails any PR pushing the bill past what was approved
+- 🧪 Two redundant Twingate connectors, tag-attached deny-inbound firewalls, cloud-init hardening, mocked-provider `tofu test` suites, and credential-free pull request plans because the repo is public
+
+[**Repository**](https://github.com/ChiefGyk3D/Clouds-Against-Humanity) · [**Wiki**](https://github.com/ChiefGyk3D/Clouds-Against-Humanity/wiki) · [**Give feedback**](https://github.com/ChiefGyk3D/Clouds-Against-Humanity/wiki/Give-Feedback-and-Open-an-Issue)
 
 ---
 
@@ -94,27 +133,9 @@ flowchart LR
 
 ### ☁️ Cloud & infrastructure as code
 
-**Clouds Against Humanity** is my homelab's cloud extension, built in public as a teaching repo. Every resource is OpenTofu, every apply goes through Spacelift with a human reading the plan first, every secret lives in Doppler, and the only way in is Twingate. No droplet has a single public inbound port open: no VPN, no bastion, no SSH on the internet.
-
-```mermaid
-flowchart LR
-    me["Me + Twingate client"]:::you --> tg["Twingate<br/>per-resource access"]:::ctrl
-    conn["Connectors in a DO VPC<br/>outbound only"]:::cloud --> tg
-    me == "end-to-end encrypted" ==> conn
-    net["The internet"]:::ext -. "nothing listening" .-x conn
-    pr["PR + CI"]:::ctrl --> sl["Spacelift<br/>plan, confirm, apply"]:::ctrl --> conn
-    dp["Doppler"]:::secret --> sl
-
-    classDef you fill:#132a1f,stroke:#4ade80,color:#dcfce7
-    classDef ext fill:#3b1d1d,stroke:#f87171,color:#fde2e2
-    classDef ctrl fill:#1e1b3a,stroke:#a78bfa,color:#ede9fe
-    classDef cloud fill:#0f2a3d,stroke:#38bdf8,color:#e0f2fe
-    classDef secret fill:#3a2a0f,stroke:#fbbf24,color:#fef3c7
-```
-
 | Project | What it does |
 |---|---|
-| **[Clouds Against Humanity](https://github.com/ChiefGyk3D/Clouds-Against-Humanity)** | A small, cheap, locked-down DigitalOcean environment built one costed stage at a time under a $30/month ceiling, with a CI cost gate that fails any PR pushing the bill past what was approved. Two redundant Twingate connectors, tag-attached deny-inbound firewalls, cloud-init hardening, mocked-provider `tofu test` suites, and credential-free pull request plans because the repo is public. The **[wiki](https://github.com/ChiefGyk3D/Clouds-Against-Humanity/wiki)** walks through every component with flowcharts, the threat model, the things that broke, and [why I use ZTNA instead of a VPN](https://github.com/ChiefGyk3D/Clouds-Against-Humanity/wiki/Why-ZTNA-Not-a-VPN) (short version: a VPN puts you *on the network* after one login and needs a box listening on the internet to do it, and both of those keep showing up in breach reports). |
+| **[Clouds Against Humanity](https://github.com/ChiefGyk3D/Clouds-Against-Humanity)** | My homelab's cloud extension and teaching repo, [featured above](#-featured-clouds-against-humanity). OpenTofu through Spacelift, secrets in Doppler, reachable only over Twingate ZTNA, zero public inbound ports. |
 
 ### 🧑‍💻 AI agents & team workflow
 
