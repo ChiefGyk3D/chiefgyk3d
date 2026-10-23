@@ -24,13 +24,33 @@ I break things, fix things, automate everything, and talk about it on YouTube.
 
 **🔗 All my links:** [links.chiefgyk3d.com](https://links.chiefgyk3d.com)
 
-**Jump to:** [⭐ Featured](#-featured-clouds-against-humanity) · [🧭 At a glance](#-at-a-glance) · [🐧 Projects](#-open-source-projects) · [🧪 Home lab](#-my-home-lab-stack) · [🎥 Content](#-content-creation)
+**Jump to:** [🧭 At a glance](#-at-a-glance) · [⭐ Clouds Against Humanity](#-start-here-clouds-against-humanity) · [🐧 Projects](#-open-source-projects) · [🧪 Home lab](#-my-home-lab-stack) · [🎥 Content](#-content-creation)
 
 </div>
 
 ---
 
-## ⭐ Featured: Clouds Against Humanity
+## 🧭 At a glance
+
+| | |
+|---|---|
+| 🛡️ **Day job** | Cybersecurity engineer working across IAM, EDR, SOAR, ZTNA, SASE, and cloud security. CISSP, primarily self-taught: homelabbing, curiosity, and hands-on experience over formal education. |
+| 🐧 **Desktop** | Pop!_OS, Parrot OS, and Debian as daily drivers on hand-built desktops and laptops from Tuxedo Computers, System76, and MNT. Ubuntu on production servers, RHEL-family (Rocky, AlmaLinux, CentOS) at work. |
+| 📡 **Radio** | Licensed amateur radio operator. SDR, Meshtastic, LoRa, antenna builds, and a growing toolchain for turning a Linux box into an RF workstation. |
+| 🏗️ **Homelab** | pfSense + Suricata at the edge, an OpenSearch/Wazuh SIEM, UniFi networking, a dual-GPU inference box, SBCs everywhere, as much repurposed hardware as practical, and a ZTNA-only [cloud extension](https://github.com/ChiefGyk3D/Clouds-Against-Humanity) built as code. [Details below.](#-my-home-lab-stack) |
+| 🌐 **Self-hosted** | My own Mastodon instance, Matrix homeserver, Pixelfed, link aggregator, and more. Bluesky PDS coming soon. |
+| 🎥 **Content** | Tutorials, security breakdowns, and livestreams for the next generation of tech and security professionals. |
+| 🧠 **Cares about** | End-to-end encryption, zero trust, owning your infrastructure, right to repair, privacy rights, threat modeling, OSINT, and telecom security (SS7, IMSI catchers, Stingrays). |
+
+If you like cybersecurity automation, homelab engineering, decentralized social media, ham radio, or Linux on the desktop, you're in the right place. **Everything I build is open source.**
+
+---
+
+## 🐧 Open-Source Projects
+
+Everything below is a repo you can clone today. Start with the one most people come for, then browse by topic.
+
+### ⭐ Start here: Clouds Against Humanity
 
 **My most-starred project, and the one I most want you to read.** A small, cheap, locked-down DigitalOcean environment that exists to teach cloud security, zero trust, DevSecOps, and infrastructure as code by building it in public. Every resource is OpenTofu, every apply goes through Spacelift with a human reading the plan first, every secret lives in Doppler, and the only way in is Twingate. **No droplet has a single public inbound port open**: no VPN, no bastion, no SSH on the internet.
 
@@ -61,31 +81,10 @@ flowchart LR
 - 🚀 **[Start here if you are new](https://github.com/ChiefGyk3D/Clouds-Against-Humanity/wiki/Start-Here-If-You-Are-New)**: cloud, Terraform, and zero trust from zero
 - 🛡️ **[Why ZTNA, not a VPN](https://github.com/ChiefGyk3D/Clouds-Against-Humanity/wiki/Why-ZTNA-Not-a-VPN)**: a VPN puts you *on the network* after one login and needs a box listening on the internet to do it; both keep showing up in breach reports
 - 💸 **Built under a $30/month ceiling**, with a CI cost gate that fails any PR pushing the bill past what was approved
-- 🧪 Two redundant Twingate connectors, tag-attached deny-inbound firewalls, cloud-init hardening, mocked-provider `tofu test` suites, and credential-free pull request plans because the repo is public
 
 [**Repository**](https://github.com/ChiefGyk3D/Clouds-Against-Humanity) · [**Wiki**](https://github.com/ChiefGyk3D/Clouds-Against-Humanity/wiki) · [**Give feedback**](https://github.com/ChiefGyk3D/Clouds-Against-Humanity/wiki/Give-Feedback-and-Open-an-Issue)
 
 ---
-
-## 🧭 At a glance
-
-| | |
-|---|---|
-| 🛡️ **Day job** | Cybersecurity engineer working across IAM, EDR, SOAR, ZTNA, SASE, and cloud security. CISSP, primarily self-taught: homelabbing, curiosity, and hands-on experience over formal education. |
-| 🐧 **Desktop** | Pop!_OS, Parrot OS, and Debian as daily drivers on hand-built desktops and laptops from Tuxedo Computers, System76, and MNT. Ubuntu on production servers, RHEL-family (Rocky, AlmaLinux, CentOS) at work. |
-| 📡 **Radio** | Licensed amateur radio operator. SDR, Meshtastic, LoRa, antenna builds, and a growing toolchain for turning a Linux box into an RF workstation. |
-| 🏗️ **Homelab** | pfSense + Suricata at the edge, an OpenSearch/Wazuh SIEM, UniFi networking, a dual-GPU inference box, SBCs everywhere, as much repurposed hardware as practical, and a ZTNA-only [cloud extension](https://github.com/ChiefGyk3D/Clouds-Against-Humanity) built as code. [Details below.](#-my-home-lab-stack) |
-| 🌐 **Self-hosted** | My own Mastodon instance, Matrix homeserver, Pixelfed, link aggregator, and more. Bluesky PDS coming soon. |
-| 🎥 **Content** | Tutorials, security breakdowns, and livestreams for the next generation of tech and security professionals. |
-| 🧠 **Cares about** | End-to-end encryption, zero trust, owning your infrastructure, right to repair, privacy rights, threat modeling, OSINT, and telecom security (SS7, IMSI catchers, Stingrays). |
-
-If you like cybersecurity automation, homelab engineering, decentralized social media, ham radio, or Linux on the desktop, you're in the right place. **Everything I build is open source.**
-
----
-
-## 🐧 Open-Source Projects
-
-Grouped by what they're for. Every row is a repo you can clone today.
 
 ### 📡 Ham radio, RF & time
 
@@ -130,12 +129,6 @@ flowchart LR
 | **[git-your-ship-together](https://github.com/ChiefGyk3D/git-your-ship-together)** | The reusable, hardened GitHub Actions workflows shared by my Python projects. Each repo gets lint, tests, a container build, a signed multi-arch release, and six kinds of scan from three short YAML files. Secrets live in Doppler and are fetched over OIDC: not one Actions secret across the fleet. Written to be read if you want to see a hardened CI setup end to end. |
 | **[The Great Infocon Recovery](https://github.com/ChiefGyk3D/the-great-infocon-recovery)** | Rebuilds and maintains a local time capsule of the infocon.org archive and DEF CON's media library, preserving decades of hacker history against link rot and quiet deletion. |
 | **[Offline Password Generator](https://github.com/ChiefGyk3D/offline_pass_generator)** | Tiny Python script that generates URL-safe random passwords with the `secrets` module. No network, no dependencies, no excuses. |
-
-### ☁️ Cloud & infrastructure as code
-
-| Project | What it does |
-|---|---|
-| **[Clouds Against Humanity](https://github.com/ChiefGyk3D/Clouds-Against-Humanity)** | My homelab's cloud extension and teaching repo, [featured above](#-featured-clouds-against-humanity). OpenTofu through Spacelift, secrets in Doppler, reachable only over Twingate ZTNA, zero public inbound ports. |
 
 ### 🧑‍💻 AI agents & team workflow
 
