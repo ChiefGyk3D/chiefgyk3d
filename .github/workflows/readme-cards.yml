@@ -42,7 +42,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2.0.2
         with:
           card: stats
-          options: "username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&rank_icon=percentile&ring_color=58A6FF&${{ env.THEME }}"
+          options: "username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&hide_rank=true&${{ env.THEME }}"
           path: profile/stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
