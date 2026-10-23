@@ -24,7 +24,7 @@ I break things, fix things, automate everything, and talk about it on YouTube.
 
 **🔗 All my links:** [links.chiefgyk3d.com](https://links.chiefgyk3d.com)
 
-**Jump to:** [🧭 At a glance](#-at-a-glance) · [⭐ Clouds Against Humanity](#-start-here-clouds-against-humanity) · [🐧 Projects](#-open-source-projects) · [🧪 Home lab](#-my-home-lab-stack) · [🎥 Content](#-content-creation)
+**Jump to:** [🧭 At a glance](#-at-a-glance) · [🧪 Home lab](#-my-home-lab-stack) · [⭐ Clouds Against Humanity](#-clouds-against-humanity) · [🐧 Projects](#-open-source-projects) · [🎥 Content](#-content-creation)
 
 </div>
 
@@ -46,11 +46,53 @@ If you like cybersecurity automation, homelab engineering, decentralized social 
 
 ---
 
-## 🐧 Open-Source Projects
+## 🧪 My Home Lab Stack
 
-Grouped by what they're for. Every row is a repo you can clone today, and the most-starred one comes first.
+Building, breaking, and learning in a production-grade home lab. I prioritize energy efficiency and sustainability by using SBCs and repurposed hardware wherever practical.
 
-### ⭐ Start here: Clouds Against Humanity
+### 🔒 Network & security
+
+- **Firewall:** Supermicro E300-8D (Intel Xeon D-1518, 32 GB DDR4 ECC, 256 GB NVMe) running **pfSense** + **Suricata** IDS/IPS + **pfBlockerNG** on VLAN-segmented networks, with dual Intel I226 2.5 GbE NICs added for WAN future-proofing
+- **Switching & Wi-Fi:** UniFi managed switches and access points. Telemetry collected by **[UniFi Poller](https://unpoller.com/)** into Grafana/InfluxDB, device logs piped to **Wazuh** for EDR alerting
+
+### 📊 SIEM / SOC server
+
+- **Hardware:** Supermicro SuperServer 5019A-FTN4 (Intel Atom C3758, 8 cores, 64 GB DDR4 ECC)
+- **Storage:** 240 GB SATA SSD (OS) · 1 TB NVMe (hot data, 0 to 30 days) · 2 TB SATA SSD (warm data, 30 to 365 days)
+- **Stack:** Dockerized OpenSearch (hot/warm cluster), Wazuh EDR, Grafana, Logstash, Prometheus, InfluxDB, Syslog-ng, UniFi Poller, Portainer
+- **Repos:** [siem-docker-stack](https://github.com/ChiefGyk3D/siem-docker-stack) (server side) · [pfsense-siem-stack](https://github.com/ChiefGyk3D/pfsense-siem-stack) (pfSense side)
+
+### 🤖 AI inference
+
+- **FrankenLLM server** running dual GPUs: NVIDIA RTX 5060 Ti 16 GB + NVIDIA RTX 3050 8 GB for simultaneous multi-model inference ([repo](https://github.com/ChiefGyk3D/FrankenLLM))
+
+### 🖥️ Compute & storage
+
+- **Single-board computers:** Raspberry Pi (4 & 5), Pine64, and various other devices for power-efficient computing
+- **Coming soon:** a Proxmox cluster running Kubernetes for container orchestration and bot infrastructure
+- **Second-hand PCs** repurposed whenever possible to reduce e-waste
+- **Synology NAS** with NUT (Network UPS Tools) monitoring and notifications, soon also hosting a [Hammunition Bunker](https://github.com/Renegade-Penguin/hammunition-bunker) mirror
+
+### 📡 Radio, SDR & time
+
+- **Meshtastic nodes**, LoRa experiments, and custom antenna builds
+- **SDR:** ADS-B aircraft tracking, UAT weather, and RF signal analysis
+- **Station tooling:** [Hammunition](https://github.com/Renegade-Penguin/Hammunition) builds the workstation, [Hammunition Hill](https://github.com/Renegade-Penguin/hammunition-hill) watches propagation from it
+- **In progress:** two GPS-disciplined stratum-1 NTP appliances built from [Mother Ticker](https://github.com/ChiefGyk3D/mother-ticker), one for the main LAN and one for the malware-analysis segment
+
+### ☁️ Cloud extension
+
+- **[Clouds Against Humanity](https://github.com/ChiefGyk3D/Clouds-Against-Humanity):** DigitalOcean droplets managed with OpenTofu through Spacelift, secrets in Doppler, reachable only over Twingate ZTNA with zero public inbound ports. Next stage ships its logs back to the SIEM above.
+
+### 🌐 Self-hosted services
+
+- My own Mastodon instance, Matrix homeserver, Pixelfed, link aggregator, support page, and more.
+
+This lab isn't just a playground. It's where I test security tools, practice incident response, and develop the automation I share with the community.
+
+---
+
+## ⭐ Clouds Against Humanity
 
 **My most-starred project, and the one I most want you to read.** A small, cheap, locked-down DigitalOcean environment that exists to teach cloud security, zero trust, DevSecOps, and infrastructure as code by building it in public. Every resource is OpenTofu, every apply goes through Spacelift with a human reading the plan first, every secret lives in Doppler, and the only way in is Twingate. **No droplet has a single public inbound port open**: no VPN, no bastion, no SSH on the internet.
 
@@ -85,6 +127,10 @@ flowchart LR
 [**Repository**](https://github.com/ChiefGyk3D/Clouds-Against-Humanity) · [**Wiki**](https://github.com/ChiefGyk3D/Clouds-Against-Humanity/wiki) · [**Give feedback**](https://github.com/ChiefGyk3D/Clouds-Against-Humanity/wiki/Give-Feedback-and-Open-an-Issue)
 
 ---
+
+## 🐧 Open-Source Projects
+
+Grouped by what they're for. Every row is a repo you can clone today.
 
 ### 📡 Ham radio, RF & time
 
@@ -191,52 +237,6 @@ Fixes for the laptops and desktops I actually run, so the next person doesn't ha
 |---|---|
 | **[PiNodeXMR Grafana Dashboard](https://github.com/ChiefGyk3D/PiNodeXMR_Grafana_Dashboard)** | Monero node monitoring for Grafana with a custom monerod exporter: sync status, network hashrate, mempool, peers, and system health for PiNodeXMR devices via Prometheus. |
 | **[Yo Mama as a Service](https://github.com/ChiefGyk3D/yomama-as-a-service)** | A humorous API delivering classic "Yo Mama" jokes on demand. Built for fun and for learning API development, and it still gets the full hardened CI treatment. |
-
----
-
-## 🧪 My Home Lab Stack
-
-Building, breaking, and learning in a production-grade home lab. I prioritize energy efficiency and sustainability by using SBCs and repurposed hardware wherever practical.
-
-### 🔒 Network & security
-
-- **Firewall:** Supermicro E300-8D (Intel Xeon D-1518, 32 GB DDR4 ECC, 256 GB NVMe) running **pfSense** + **Suricata** IDS/IPS + **pfBlockerNG** on VLAN-segmented networks, with dual Intel I226 2.5 GbE NICs added for WAN future-proofing
-- **Switching & Wi-Fi:** UniFi managed switches and access points. Telemetry collected by **[UniFi Poller](https://unpoller.com/)** into Grafana/InfluxDB, device logs piped to **Wazuh** for EDR alerting
-
-### 📊 SIEM / SOC server
-
-- **Hardware:** Supermicro SuperServer 5019A-FTN4 (Intel Atom C3758, 8 cores, 64 GB DDR4 ECC)
-- **Storage:** 240 GB SATA SSD (OS) · 1 TB NVMe (hot data, 0 to 30 days) · 2 TB SATA SSD (warm data, 30 to 365 days)
-- **Stack:** Dockerized OpenSearch (hot/warm cluster), Wazuh EDR, Grafana, Logstash, Prometheus, InfluxDB, Syslog-ng, UniFi Poller, Portainer
-- **Repos:** [siem-docker-stack](https://github.com/ChiefGyk3D/siem-docker-stack) (server side) · [pfsense-siem-stack](https://github.com/ChiefGyk3D/pfsense-siem-stack) (pfSense side)
-
-### 🤖 AI inference
-
-- **FrankenLLM server** running dual GPUs: NVIDIA RTX 5060 Ti 16 GB + NVIDIA RTX 3050 8 GB for simultaneous multi-model inference ([repo](https://github.com/ChiefGyk3D/FrankenLLM))
-
-### 🖥️ Compute & storage
-
-- **Single-board computers:** Raspberry Pi (4 & 5), Pine64, and various other devices for power-efficient computing
-- **Coming soon:** a Proxmox cluster running Kubernetes for container orchestration and bot infrastructure
-- **Second-hand PCs** repurposed whenever possible to reduce e-waste
-- **Synology NAS** with NUT (Network UPS Tools) monitoring and notifications, soon also hosting a [Hammunition Bunker](https://github.com/Renegade-Penguin/hammunition-bunker) mirror
-
-### 📡 Radio, SDR & time
-
-- **Meshtastic nodes**, LoRa experiments, and custom antenna builds
-- **SDR:** ADS-B aircraft tracking, UAT weather, and RF signal analysis
-- **Station tooling:** [Hammunition](https://github.com/Renegade-Penguin/Hammunition) builds the workstation, [Hammunition Hill](https://github.com/Renegade-Penguin/hammunition-hill) watches propagation from it
-- **In progress:** two GPS-disciplined stratum-1 NTP appliances built from [Mother Ticker](https://github.com/ChiefGyk3D/mother-ticker), one for the main LAN and one for the malware-analysis segment
-
-### ☁️ Cloud extension
-
-- **[Clouds Against Humanity](https://github.com/ChiefGyk3D/Clouds-Against-Humanity):** DigitalOcean droplets managed with OpenTofu through Spacelift, secrets in Doppler, reachable only over Twingate ZTNA with zero public inbound ports. Next stage ships its logs back to the SIEM above.
-
-### 🌐 Self-hosted services
-
-- My own Mastodon instance, Matrix homeserver, Pixelfed, link aggregator, support page, and more.
-
-This lab isn't just a playground. It's where I test security tools, practice incident response, and develop the automation I share with the community.
 
 ---
 
