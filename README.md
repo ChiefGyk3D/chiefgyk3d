@@ -35,10 +35,10 @@ I break things, fix things, automate everything, and talk about it on YouTube.
 **My most-starred project, and the one I most want you to read.** A small, cheap, locked-down DigitalOcean environment that exists to teach cloud security, zero trust, DevSecOps, and infrastructure as code by building it in public. Every resource is OpenTofu, every apply goes through Spacelift with a human reading the plan first, every secret lives in Doppler, and the only way in is Twingate. **No droplet has a single public inbound port open**: no VPN, no bastion, no SSH on the internet.
 
 <div align="center">
-  <a href="https://github.com/ChiefGyk3D/Clouds-Against-Humanity"><img width="620" alt="Clouds Against Humanity stars and forks since the repository was created, as of 2026-10-23" src="./profile/cah-growth.png"/></a>
+  <a href="https://github.com/ChiefGyk3D/Clouds-Against-Humanity"><img width="540" alt="Clouds Against Humanity growth: cumulative stars and forks since the repository was created, and weekly merged pull requests and closed issues" src="https://raw.githubusercontent.com/ChiefGyk3D/Clouds-Against-Humanity/main/docs/wiki/images/repo-growth.png"/></a>
 </div>
 
-<sub>Stars measure attention, not use. Static snapshot as of 2026-10-23; the <a href="https://github.com/ChiefGyk3D/Clouds-Against-Humanity/wiki/Repository-Growth">Repository growth</a> page has the live numbers, plus weekly merged PRs and closed issues.</sub>
+<sub>Stars measure attention, not use. The chart is regenerated in that repo and pulled from it, with the as-of date printed in the picture; the <a href="https://github.com/ChiefGyk3D/Clouds-Against-Humanity/wiki/Repository-Growth">Repository growth</a> page has the numbers as a table.</sub>
 
 ```mermaid
 flowchart LR
