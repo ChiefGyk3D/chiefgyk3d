@@ -215,7 +215,7 @@ Building, breaking, and learning in a production-grade home lab. I prioritize en
 ### 🖥️ Compute & storage
 
 - **Single-board computers:** Raspberry Pi (4 & 5), Pine64, and various other devices for power-efficient computing
-- **Coming soon:** 5× Pi 5 Kubernetes cluster for container orchestration and bot infrastructure
+- **Coming soon:** a Proxmox cluster running Kubernetes for container orchestration and bot infrastructure
 - **Second-hand PCs** repurposed whenever possible to reduce e-waste
 - **Synology NAS** with NUT (Network UPS Tools) monitoring and notifications, soon also hosting a [Hammunition Bunker](https://github.com/Renegade-Penguin/hammunition-bunker) mirror
 
@@ -232,7 +232,7 @@ Building, breaking, and learning in a production-grade home lab. I prioritize en
 
 ### 🌐 Self-hosted services
 
-- My own Mastodon instance, Matrix homeserver, Pixelfed, link aggregator, support page, and more. Bluesky PDS coming soon.
+- My own Mastodon instance, Matrix homeserver, Pixelfed, link aggregator, support page, and more.
 
 This lab isn't just a playground. It's where I test security tools, practice incident response, and develop the automation I share with the community.
 
