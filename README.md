@@ -24,7 +24,7 @@ I break things, fix things, automate everything, and talk about it on YouTube.
 
 **🔗 All my links:** [links.chiefgyk3d.com](https://links.chiefgyk3d.com)
 
-**Jump to:** [🧭 At a glance](#-at-a-glance) · [🧪 Home lab](#-my-home-lab-stack) · [⭐ Clouds Against Humanity](#-clouds-against-humanity) · [🐧 Projects](#-open-source-projects) · [🎥 Content](#-content-creation)
+**Jump to:** [🧭 At a glance](#-at-a-glance) · [🧪 Home lab](#-my-home-lab-stack) · [📊 Stats](#-github-stats) · [⭐ Clouds Against Humanity](#-clouds-against-humanity) · [🐧 Projects](#-open-source-projects) · [🎥 Content](#-content-creation)
 
 </div>
 
@@ -89,6 +89,21 @@ Building, breaking, and learning in a production-grade home lab. I prioritize en
 - My own Mastodon instance, Matrix homeserver, Pixelfed, link aggregator, support page, and more.
 
 This lab isn't just a playground. It's where I test security tools, practice incident response, and develop the automation I share with the community.
+
+---
+
+## 📊 GitHub Stats
+
+<div align="center">
+  <img height="180em" alt="ChiefGyk3D's GitHub stats" src="./profile/stats.svg"/>
+  <img height="180em" alt="Most used languages" src="./profile/top-langs.svg"/>
+</div>
+
+<div align="center">
+  <img alt="Contribution streak" src="./profile/streak.svg"/>
+</div>
+
+<sub>Generated once a day by <a href="./.github/workflows/readme-cards.yml">a GitHub Action</a> and committed to this repo. Nothing is fetched when you load this page, and nothing can rate limit it.</sub>
 
 ---
 
@@ -255,21 +270,6 @@ Educational content focused on giving aspiring tech and cybersecurity profession
 - **Device reviews**, privacy tools, and open-source infrastructure
 
 Whether you're just starting out or leveling up, the goal is content that's accessible, practical, and security-focused.
-
----
-
-## 📊 GitHub Stats
-
-<div align="center">
-  <img height="180em" alt="ChiefGyk3D's GitHub stats" src="./profile/stats.svg"/>
-  <img height="180em" alt="Most used languages" src="./profile/top-langs.svg"/>
-</div>
-
-<div align="center">
-  <img alt="Contribution streak" src="./profile/streak.svg"/>
-</div>
-
-<sub>Generated once a day by <a href="./.github/workflows/readme-cards.yml">a GitHub Action</a> and committed to this repo. Nothing is fetched when you load this page, and nothing can rate limit it.</sub>
 
 ---
 
