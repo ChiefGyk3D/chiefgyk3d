@@ -244,7 +244,7 @@ Fixes for the laptops and desktops I actually run, so the next person doesn't ha
 | **[Budgeting Tools](https://github.com/ChiefGyk3D/budgeting_tools)** | `finplan`: one command covering budgets, expense tracking, pay calendars, savings goals, debt payoff, mortgages, refinancing, investments, retirement, and net worth, all sharing a single financial engine and the same input validation. |
 | **[AInvestment Planner](https://github.com/ChiefGyk3D/AInvestment_planner)** | Fee-aware allocation planner for *small* stock and crypto accounts, where order minimums and spreads matter more than any optimizer. Produces target weights and the exact orders per venue, drops orders too small to be worth their fee, and tells you what the whole thing cost. Never touches your brokerage. Not financial advice. |
 | **[Investment Tools](https://github.com/ChiefGyk3D/investment_tools)** | The original grab bag of Python calculators: auto loans, budget planning, compound interest, debt payoff, and more, with charts and Excel output. |
-| **[Long Weekend Planner](https://github.com/ChiefGyk3D/Long_Weekend_Planner)** | Finds the long weekends hiding in your calendar and plans a year of PTO around them. Give it the holidays your employer actually observes and your PTO allowance, and it works out which ones are one day away from a four-day break. |
+| **[PTO Colada](https://github.com/ChiefGyk3D/PTO-Colada)** | Plans the fewest PTO days for the most days off. Give it the holidays your employer actually observes and your PTO balance, and it finds the long weekends and bridges worth taking, scores each plan in days off per PTO day, and counts honestly: every day once, PTO only on days you would have worked. |
 
 ### 🪙 Monero & 😂 just for fun
 
