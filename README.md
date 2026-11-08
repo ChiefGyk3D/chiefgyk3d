@@ -22,7 +22,7 @@ I break things, fix things, automate everything, and talk about it on YouTube.
 [![Ko-fi](https://img.shields.io/badge/Ko--fi-Buy%20Me%20a%20Coffee-ff5f5f?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/chiefgyk3d)
 [![Support page](https://img.shields.io/badge/Crypto%20%26%20Merch-support.chiefgyk3d.com-8B949E?style=for-the-badge&logo=bitcoin&logoColor=white)](https://support.chiefgyk3d.com)
 
-**🔗 All my links:** [links.chiefgyk3d.com](https://links.chiefgyk3d.com)
+**🔗 All my links:** [links.chiefgyk3d.com/socials](https://links.chiefgyk3d.com/socials)
 
 **Jump to:** [🧭 At a glance](#-at-a-glance) · [🧪 Home lab](#-my-home-lab-stack) · [📊 Stats](#-github-stats) · [⭐ Clouds Against Humanity](#-clouds-against-humanity) · [🐧 Projects](#-open-source-projects) · [🎥 Content](#-content-creation)
 
