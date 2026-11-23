@@ -22,7 +22,7 @@ I break things, fix things, automate everything, and talk about it on YouTube.
 [![Ko-fi](https://img.shields.io/badge/Ko--fi-Buy%20Me%20a%20Coffee-ff5f5f?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/chiefgyk3d)
 [![Support page](https://img.shields.io/badge/Crypto%20%26%20Merch-support.chiefgyk3d.com-8B949E?style=for-the-badge&logo=bitcoin&logoColor=white)](https://support.chiefgyk3d.com)
 
-**🔗 All my links:** [links.chiefgyk3d.com/socials](https://links.chiefgyk3d.com/socials)
+**🔗 All my links:** [links.chiefgyk3d.com/socials](https://links.chiefgyk3d.com/socials) · [Blog and technical journal](https://chiefgyk3d.com) · [Consulting](https://renegadepenguinllc.com)
 
 **Jump to:** [🧭 At a glance](#-at-a-glance) · [🧪 Home lab](#-my-home-lab-stack) · [📊 Stats](#-github-stats) · [⭐ Clouds Against Humanity](#-clouds-against-humanity) · [🐧 Projects](#-open-source-projects) · [🎥 Content](#-content-creation)
 
@@ -35,10 +35,12 @@ I break things, fix things, automate everything, and talk about it on YouTube.
 | | |
 |---|---|
 | 🛡️ **Day job** | Cybersecurity engineer working across IAM, EDR, SOAR, ZTNA, SASE, and cloud security. CISSP, primarily self-taught through homelabbing, curiosity, and hands-on experience rather than formal education. |
+| 🐧 **Consulting** | [Renegade Penguin LLC](https://renegadepenguinllc.com) is my public business entity for cybersecurity and IT consulting, education, community, and speaking. Work is shared between this profile and [the GitHub org](https://github.com/Renegade-Penguin). |
 | 🐧 **Desktop** | Pop!_OS, Parrot OS, and Debian as daily drivers on hand-built desktops and laptops from Tuxedo Computers, System76, and MNT. Ubuntu on production servers, RHEL-family systems (Rocky, AlmaLinux, CentOS) at work. |
 | 📡 **Radio** | Licensed amateur radio operator working with SDR, Meshtastic, LoRa, antenna builds, and a growing toolchain for turning a Linux box into an RF workstation. |
 | 🏗️ **Homelab** | pfSense + Suricata at the edge, an OpenSearch/Wazuh SIEM, UniFi networking, a dual-GPU inference box, SBCs everywhere, as much repurposed hardware as practical, and a ZTNA-only [cloud extension](https://github.com/ChiefGyk3D/Clouds-Against-Humanity) built as code. [Details below.](#-my-home-lab-stack) |
 | 🌐 **Self-hosted** | My own Mastodon instance, Matrix homeserver, Pixelfed, link aggregator, and more. |
+| 📝 **Blog** | [chiefgyk3d.com](https://chiefgyk3d.com) is my blog and technical journal. Its public source is the [no-php-no-cry](https://github.com/ChiefGyk3D/no-php-no-cry) repo, a Hugo static site moved off WordPress and live on Cloudflare Pages since 2026-11-10. |
 | 🎥 **Content** | Tutorials, security breakdowns, and livestreams for people getting into tech and security or trying to get better at them. |
 | 🧠 **Cares about** | End-to-end encryption, zero trust, owning your infrastructure, right to repair, privacy rights, threat modeling, OSINT, and telecom security (SS7, IMSI catchers, Stingrays). |
 
@@ -237,10 +239,10 @@ Fixes and infrastructure for the systems I actually run, so the next person does
 | **[LLMFAO](https://github.com/ChiefGyk3D/LLMFAO)** | AI-powered multi-platform interaction engine for livestreams and communities, with Twitch first and Ollama as the default. <sub>Design phase: nothing runs yet.</sub> |
 | **[Star Daemon](https://github.com/ChiefGyk3D/Star-Daemon)** | Posts the repositories you star to Mastodon, Bluesky, Discord, Matrix, and Threads as rich cards, so your followers see what you're reading. |
 | **[Mastodon Tweaks](https://github.com/ChiefGyk3D/Mastodon_Tweaks)** | Custom server stylesheets for Mastodon, rebased on Mastodon Bird UI v4.0.0. Posting and appearance variants maintained for my own instance. |
-| **[no-php-no-cry](https://github.com/ChiefGyk3D/no-php-no-cry)** | The Hugo static site and work journal behind chiefgyk3d.com, moved off WordPress and published as a worked example. Live on Cloudflare Pages since 2026-11-10. |
+| **[no-php-no-cry](https://github.com/ChiefGyk3D/no-php-no-cry)** | The Hugo static site and work journal behind [chiefgyk3d.com](https://chiefgyk3d.com), moved off WordPress and published as a worked example. Live on Cloudflare Pages since 2026-11-10. |
 | **[support-me](https://github.com/ChiefGyk3D/support-me)** | The responsive donation page behind [support.chiefgyk3d.com](https://support.chiefgyk3d.com): crypto tips with one-click copy, merch, Patreon, StreamElements, and every social link in one place. |
 | **[Email Signature](https://github.com/ChiefGyk3D/email_signature)** | Responsive HTML email signature template with desktop and mobile versions and icons for eleven social platforms. |
-| **[Renegade Penguin LLC](https://github.com/Renegade-Penguin/renegade-penguin-site)** | Site for the public LLC: cybersecurity and IT consulting, education, community, and speaking. |
+| **[Renegade Penguin LLC](https://renegadepenguinllc.com)** | Site for the public LLC: cybersecurity and IT consulting, education, community, and speaking. Its source is in the [renegade-penguin-site repo](https://github.com/Renegade-Penguin/renegade-penguin-site) under [the GitHub org](https://github.com/Renegade-Penguin), where work is shared with this personal profile. |
 
 ### 📚 Education & study guides
 
@@ -270,6 +272,7 @@ Fixes and infrastructure for the systems I actually run, so the next person does
 
 **📹 Videos:** [YouTube](https://youtube.com/@ChiefGyk3D) • [TikTok](https://tiktok.com/@chiefgyk3d)
 **🔴 Livestreaming:** [YouTube](https://youtube.com/@ChiefGyk3D) • [Twitch](https://twitch.tv/chiefgyk3d) • [Kick](https://kick.com/chiefgyk3d) • [TikTok](https://tiktok.com/@chiefgyk3d)
+**📝 Blog and technical journal:** [chiefgyk3d.com](https://chiefgyk3d.com)
 
 I make practical videos and livestreams about:
 
