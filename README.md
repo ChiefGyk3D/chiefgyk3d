@@ -34,21 +34,21 @@ I break things, fix things, automate everything, and talk about it on YouTube.
 
 | | |
 |---|---|
-| 🛡️ **Day job** | Cybersecurity engineer working across IAM, EDR, SOAR, ZTNA, SASE, and cloud security. CISSP, primarily self-taught: homelabbing, curiosity, and hands-on experience over formal education. |
-| 🐧 **Desktop** | Pop!_OS, Parrot OS, and Debian as daily drivers on hand-built desktops and laptops from Tuxedo Computers, System76, and MNT. Ubuntu on production servers, RHEL-family (Rocky, AlmaLinux, CentOS) at work. |
-| 📡 **Radio** | Licensed amateur radio operator. SDR, Meshtastic, LoRa, antenna builds, and a growing toolchain for turning a Linux box into an RF workstation. |
+| 🛡️ **Day job** | Cybersecurity engineer working across IAM, EDR, SOAR, ZTNA, SASE, and cloud security. CISSP, primarily self-taught through homelabbing, curiosity, and hands-on experience rather than formal education. |
+| 🐧 **Desktop** | Pop!_OS, Parrot OS, and Debian as daily drivers on hand-built desktops and laptops from Tuxedo Computers, System76, and MNT. Ubuntu on production servers, RHEL-family systems (Rocky, AlmaLinux, CentOS) at work. |
+| 📡 **Radio** | Licensed amateur radio operator working with SDR, Meshtastic, LoRa, antenna builds, and a growing toolchain for turning a Linux box into an RF workstation. |
 | 🏗️ **Homelab** | pfSense + Suricata at the edge, an OpenSearch/Wazuh SIEM, UniFi networking, a dual-GPU inference box, SBCs everywhere, as much repurposed hardware as practical, and a ZTNA-only [cloud extension](https://github.com/ChiefGyk3D/Clouds-Against-Humanity) built as code. [Details below.](#-my-home-lab-stack) |
 | 🌐 **Self-hosted** | My own Mastodon instance, Matrix homeserver, Pixelfed, link aggregator, and more. |
-| 🎥 **Content** | Tutorials, security breakdowns, and livestreams for the next generation of tech and security professionals. |
+| 🎥 **Content** | Tutorials, security breakdowns, and livestreams for people getting into tech and security or trying to get better at them. |
 | 🧠 **Cares about** | End-to-end encryption, zero trust, owning your infrastructure, right to repair, privacy rights, threat modeling, OSINT, and telecom security (SS7, IMSI catchers, Stingrays). |
 
-If you like cybersecurity automation, homelab engineering, decentralized social media, ham radio, or Linux on the desktop, you're in the right place. **Everything I build is open source.**
+If you're here for cybersecurity automation, homelab engineering, decentralized social media, ham radio, or Linux on the desktop, most of the work below is probably relevant. **Everything I build is open source.**
 
 ---
 
 ## 🧪 My Home Lab Stack
 
-Building, breaking, and learning in a production-grade home lab. I prioritize energy efficiency and sustainability by using SBCs and repurposed hardware wherever practical.
+This is where I build things, break them, test security tooling, practice incident response, and develop the automation I publish. I use SBCs and repurposed hardware wherever they make sense because power use and e-waste still count.
 
 ### 🔒 Network & security
 
@@ -69,7 +69,7 @@ Building, breaking, and learning in a production-grade home lab. I prioritize en
 ### 🖥️ Compute & storage
 
 - **Single-board computers:** Raspberry Pi (4 & 5), Pine64, and various other devices for power-efficient computing
-- **Coming soon:** a Proxmox cluster running Kubernetes for container orchestration and bot infrastructure
+- **In progress:** a Proxmox cluster, with templates and a rehearsal node so far. The planned [proxmox-templates](https://github.com/ChiefGyk3D/proxmox-templates) repo will hold the VM and LXC builds.
 - **Second-hand PCs** repurposed whenever possible to reduce e-waste
 - **Synology NAS** with NUT (Network UPS Tools) monitoring and notifications, soon also hosting a [Hammunition Bunker](https://github.com/Renegade-Penguin/hammunition-bunker) mirror
 
@@ -87,8 +87,6 @@ Building, breaking, and learning in a production-grade home lab. I prioritize en
 ### 🌐 Self-hosted services
 
 - My own Mastodon instance, Matrix homeserver, Pixelfed, link aggregator, support page, and more.
-
-This lab isn't just a playground. It's where I test security tools, practice incident response, and develop the automation I share with the community.
 
 ---
 
@@ -145,7 +143,7 @@ flowchart LR
 
 ## 🐧 Open-Source Projects
 
-Grouped by what they're for. Every row is a repo you can clone today.
+Grouped by what they're for. Every row is a repo you can clone today, including the ones that currently contain designs rather than working code.
 
 ### 📡 Ham radio, RF & time
 
@@ -174,20 +172,21 @@ flowchart LR
 | **[Hammunition GPS tether](https://github.com/Renegade-Penguin/hammunition-gps-tether)** | Serves your GPS receiver's position from gpsd as NMEA on loopback only, for programs that can't talk to gpsd themselves: QMapShack, the offline browser map, and GeoClue so CoMaps knows where you are. Standard library only, runs as you, never as root. |
 | **[Mother Ticker](https://github.com/ChiefGyk3D/mother-ticker)** | GPS-disciplined stratum-1 NTP servers on Raspberry Pi 4, built as appliances: chrony steered by kernel PPS from a u-blox receiver, an RTC for a plausible boot time, a status TUI on the unit's own screen and over SSH, metrics export, and a host hardened like something other machines trust for time. <sub>Alpha: tested in CI against recorded gpsd and chrony output, not yet on the target hardware.</sub> |
 | **[SolarStorm Scout](https://github.com/ChiefGyk3D/solarstorm_scout)** | Automated NOAA space-weather bot with real-time alerts for HF propagation, aurora forecasts, D-region absorption, and solar X-ray flux. Live on [Bluesky](https://bsky.app/profile/solarstormscout.bsky.social) and [Mastodon](https://social.chiefgyk3d.com/@solarstormscout). |
-| **[Penguin Overlord](https://github.com/ChiefGyk3D/penguin-overlord)** | Multi-feed Discord bot for radio operators and sysadmins: NOAA propagation data, satellite tracking, ham radio contests, grid square calculations, weather alerts, and more. |
+| **[Penguin Overlord](https://github.com/ChiefGyk3D/penguin-overlord)** | Multi-feed Discord bot for tech enthusiasts, ham radio operators, aviation spotters, and cybersecurity professionals: NOAA propagation data, satellite tracking, ham radio contests, grid square calculations, weather alerts, and more. |
 
 ### 🛡️ Security, blue team & SOC
 
 | Project | What it does |
 |---|---|
-| **[Typo Sniper](https://github.com/ChiefGyk3D/typo-sniper)** | Automated typosquatting detection using dnstwist, WHOIS lookups, and cloud automation to identify and alert on look-alike domains before they're used against you. |
+| **[Typo Sniper](https://github.com/ChiefGyk3D/typo-sniper)** | Async typosquatting and domain threat intelligence scanner using dnstwist, WHOIS, URLScan, Doppler, and AWS Secrets Manager. v2.3.0, AGPL-3.0 with a commercial license option. Still a work in progress. |
+| **[Knight Rider](https://github.com/ChiefGyk3D/Knight-Rider)** | Read-only, allowlist-only lookups of Tor onion services and I2P eepsites for defensive darknet OSINT, with three isolation tiers: Tor Browser, container, and Whonix VM. <sub>Design phase: no fetching code yet.</sub> |
 | **[Skid Finder](https://github.com/ChiefGyk3D/Skid-Finder)** | Defensive BLE monitoring for conference floors. Detects scripted Bluetooth Low Energy spam and flood tooling, the kind the skids run at DEF CON and BSides, and lets you foxhunt the source. Tuned for the ClockworkPi uConsole, runs on other Linux devices too. |
 | **[SIEM Docker Stack](https://github.com/ChiefGyk3D/siem-docker-stack)** | Production-ready, fully Dockerized SIEM/SOC stack with hot/warm tiering for home labs and SMBs: OpenSearch (2-node cluster), Wazuh EDR, Grafana, Logstash, Prometheus, InfluxDB, Syslog-ng, UniFi Poller, and automated setup scripts. The server side of my lab's SIEM. |
 | **[pfSense SIEM Stack](https://github.com/ChiefGyk3D/pfsense-siem-stack)** | pfSense deployment, monitoring, and security knowledge base: from basic configuration to SIEM integration, IDS/IPS optimization, and network security automation. The firewall side of the same SIEM. |
 | **[JumpCloud Wazuh Bridge](https://github.com/ChiefGyk3D/jumpcloud-wazuh-bridge)** | Forwards and normalizes JumpCloud events into Wazuh pipelines for centralized visibility, correlation, and alerting. |
-| **[Patch Gremlin](https://github.com/ChiefGyk3D/Patch-Gremlin)** | Security advisory and OS patch notification bot. Alerts you to critical updates across multiple platforms so nothing sits unpatched because nobody noticed. |
+| **[Patch Gremlin](https://github.com/ChiefGyk3D/Patch-Gremlin)** | Automated update notifications for Debian and RHEL-family systems. Hooks into unattended-upgrades and dnf-automatic, then delivers notifications to Discord, Microsoft Teams, Slack, Matrix, ntfy, and Gotify. |
 | **[NetPulse](https://github.com/ChiefGyk3D/netpulse)** | Continuous internet connection monitoring (throughput, latency, jitter) with historical tracking, so when the line degrades you have the receipts to hand your ISP. |
-| **[git-your-ship-together](https://github.com/ChiefGyk3D/git-your-ship-together)** | The reusable, hardened GitHub Actions workflows shared by my Python projects. Each repo gets lint, tests, a container build, a signed multi-arch release, and six kinds of scan from three short YAML files. Secrets live in Doppler and are fetched over OIDC: not one Actions secret across the fleet. Written to be read if you want to see a hardened CI setup end to end. |
+| **[git-your-ship-together](https://github.com/ChiefGyk3D/git-your-ship-together)** | Reusable, hardened GitHub Actions workflows for Python, Bash, OpenTofu, and Arduino CI, plus artifact, Python package, and container releases and a verify-published check. Latest release: v1.36.0. Secrets live in Doppler and are fetched over OIDC: not one Actions secret across the fleet. Written to be read if you want to see a hardened CI setup end to end. |
 | **[The Great Infocon Recovery](https://github.com/ChiefGyk3D/the-great-infocon-recovery)** | Rebuilds and maintains a local time capsule of the infocon.org archive and DEF CON's media library, preserving decades of hacker history against link rot and quiet deletion. |
 | **[Offline Password Generator](https://github.com/ChiefGyk3D/offline_pass_generator)** | Tiny Python script that generates URL-safe random passwords with the `secrets` module. No network, no dependencies, no excuses. |
 
@@ -200,14 +199,16 @@ How I run Claude, Codex, and Copilot as one team across a dozen repositories, wr
 | **[Department of Internal Arguments](https://github.com/ChiefGyk3D/department-of-internal-arguments)** | Shared AI agent personas and the domain knowledge they load, written once and generated for Claude Code, GitHub Copilot, ChatGPT, and local models. Four process roles (implementer, reviewer, adversarial reviewer, transcriber) plus six domain packs you name per dispatch, because twelve personas change too many variables at once to ever tell which one helped. The name is the design: the best thing a second agent can do for the first one is disagree with it. Includes a pilot with real numbers, including a same-tier reviewer that approved work an external adversarial review then broke. |
 | **[Scrum Around and Find Out](https://github.com/ChiefGyk3D/scrum-around-and-find-out)** | A GitHub Project defined as code (`board.yaml`, applied and kept current by an Action and the `safo` CLI), agent routing from one maintainer's measurements that recommends an agent and dispatches nothing, and a playbook plus lessons wiki on why the team is run this way and what broke. Bring your own GitHub App, no PAT. |
 
-### 🐧 Linux desktop & hardware
+### 🐧 Linux desktop, hardware & infrastructure
 
-Fixes for the laptops and desktops I actually run, so the next person doesn't have to rediscover them.
+Fixes and infrastructure for the systems I actually run, so the next person doesn't have to rediscover them.
 
 | Project | What it does |
 |---|---|
 | **[Quectel USB Net](https://github.com/ChiefGyk3D/quectel-usbnet)** | Switches a Quectel modem between MBIM and QMI. Fixes the EM160R-GL that shows up in `lsusb`, binds `cdc_mbim`, and still gets `No modems were found` from `mmcli` because ModemManager 1.24 never finishes setting up the MBIM port. Prints the rollback command before it changes anything, and has a `--dry-run`. |
 | **[FrankenLLM](https://github.com/ChiefGyk3D/FrankenLLM)** | Local AI inference platform combining multiple open-source LLMs behind a unified interface, designed for running several GPUs and models at once. Self-hosted and privacy-focused. Runs my dual-GPU inference box. |
+| **[proxmox-templates](https://github.com/ChiefGyk3D/proxmox-templates)** | Proxmox VM and LXC templates built from pinned base images, with CI runners first. <sub>Planned.</sub> |
+| **[speedtest-droplet](https://github.com/ChiefGyk3D/speedtest-droplet)** | Throwaway Ubuntu 24.04 DigitalOcean droplet running iperf3 servers to test a home link and firewall at 1 to 2.5 Gbit/s. |
 | **[NVIDIA Display Layout](https://github.com/ChiefGyk3D/nvidia-display-layout)** | Deterministic, NVIDIA-native display layout management for X11. Stops multi-monitor arrangements from rearranging themselves every reboot. |
 | **[Browser Cleanup Tools](https://github.com/ChiefGyk3D/browser_cleanup_tools)** | Bash scripts that clean cache, sessions, and cruft from Linux browsers and mail clients across native, Flatpak, and Snap installs. v2 adds Betterfox-derived privacy and performance profiles, Chromium policy hardening, GPU-tuned compositor settings, and a profile manager with GPG-encrypted backups. |
 | **[NAS Mount Manager](https://github.com/ChiefGyk3D/NAS_Mount_Manager)** | On-demand mounting and unmounting of SMB/CIFS and NFS shares, ideal for laptops that roam. Guided setup wizard, share discovery, status with disk usage, and saved configs. |
@@ -229,15 +230,23 @@ Fixes for the laptops and desktops I actually run, so the next person doesn't ha
 
 | Project | What it does |
 |---|---|
+| **[Reach Around](https://github.com/ChiefGyk3D/Reach-Around)** | Open-source (Apache-2.0) single pane for creator analytics: link page, media kit, unified follower numbers, self-hosted with your own API keys. <sub>Alpha v0.1.0: the first release builds only the link page; the media kit is planned.</sub> |
 | **[Hypeman](https://github.com/ChiefGyk3D/hypeman)** | The shared core behind the daemon family. A hype man's whole job is announcing you loudly to a crowd; this library does exactly that for Bluesky, Mastodon, Discord, and Matrix, so the daemons below don't each reinvent posting. |
 | **[Stream Daemon](https://github.com/ChiefGyk3D/Stream-Daemon)** | Monitors Twitch, YouTube, and Kick and announces to Mastodon, Bluesky, Discord, and Matrix when you go live or sign off, with optional AI-written messages via Gemini or a local Ollama. |
 | **[Boon Tube Daemon](https://github.com/ChiefGyk3D/Boon-Tube-Daemon)** | Watches YouTube channels for new uploads (videos and Shorts, not livestreams) and posts a per-platform announcement to Discord, Matrix, Bluesky, and Mastodon, with configurable tone. |
+| **[LLMFAO](https://github.com/ChiefGyk3D/LLMFAO)** | AI-powered multi-platform interaction engine for livestreams and communities, with Twitch first and Ollama as the default. <sub>Design phase: nothing runs yet.</sub> |
 | **[Star Daemon](https://github.com/ChiefGyk3D/Star-Daemon)** | Posts the repositories you star to Mastodon, Bluesky, Discord, Matrix, and Threads as rich cards, so your followers see what you're reading. |
 | **[Mastodon Tweaks](https://github.com/ChiefGyk3D/Mastodon_Tweaks)** | Custom server stylesheets for Mastodon, rebased on Mastodon Bird UI v4.0.0. Posting and appearance variants maintained for my own instance. |
+| **[no-php-no-cry](https://github.com/ChiefGyk3D/no-php-no-cry)** | The Hugo static site and work journal behind chiefgyk3d.com, moved off WordPress and published as a worked example. Live on Cloudflare Pages since 2026-11-10. |
 | **[support-me](https://github.com/ChiefGyk3D/support-me)** | The responsive donation page behind [support.chiefgyk3d.com](https://support.chiefgyk3d.com): crypto tips with one-click copy, merch, Patreon, StreamElements, and every social link in one place. |
 | **[Email Signature](https://github.com/ChiefGyk3D/email_signature)** | Responsive HTML email signature template with desktop and mobile versions and icons for eleven social platforms. |
-| **[No PHP No Cry](https://github.com/ChiefGyk3D/no-php-no-cry)** | chiefgyk3d.com without WordPress: a static site and work journal built because of PHP2Shell and my frustration with Matt Mullenweg and his toxicity. I covered the WordPress and Matt Mullenweg situation in a few videos: [“Who can't drive an Automattic? The fall of Wordpress and Matt Mullenweg”](https://www.youtube.com/watch?v=FnoazrD6-Rg), [“The Internet at Risk: WordPress Drama and Matt Mullenweg's Petty Fight Against WP Engine”](https://www.youtube.com/watch?v=RqRZoQqKPgs), [“Automattic and Matt Mullenweg ‘Are Doing Open Source Dirty’”](https://www.youtube.com/watch?v=QLEzJ3cXiWI). It aims to be fast, light, capable, better designed, and more secure. Open source so creators can use it and learn from it. |
-| **[Reach Around](https://github.com/ChiefGyk3D/Reach-Around)** | After years of using Beacons and giving feedback to new platforms, I kept running into limits on what I needed, so I built my own platform to replace Beacons 1:1 and surpass it, with a link page, creator analytics, and a media kit. Open source so creators can use it and learn from it. |
+| **[Renegade Penguin LLC](https://github.com/Renegade-Penguin/renegade-penguin-site)** | Site for the public LLC: cybersecurity and IT consulting, education, community, and speaking. |
+
+### 📚 Education & study guides
+
+| Project | What it does |
+|---|---|
+| **[ProjectPlus Without The Bullshit](https://github.com/ChiefGyk3D/ProjectPlus-Without-The-Bullshit)** | CompTIA Project+ PK0-005 study guide covering every exam objective, the terms, and the traps, cross-checked against the All-in-One Exam Guide, with a site, an Anki deck, and a PDF. No filler. |
 
 ### 💰 Finance & planning
 
@@ -246,7 +255,7 @@ Fixes for the laptops and desktops I actually run, so the next person doesn't ha
 | **[Budgeting Tools](https://github.com/ChiefGyk3D/budgeting_tools)** | `finplan`: one command covering budgets, expense tracking, pay calendars, savings goals, debt payoff, mortgages, refinancing, investments, retirement, and net worth, all sharing a single financial engine and the same input validation. |
 | **[AInvestment Planner](https://github.com/ChiefGyk3D/AInvestment_planner)** | Fee-aware allocation planner for *small* stock and crypto accounts, where order minimums and spreads matter more than any optimizer. Produces target weights and the exact orders per venue, drops orders too small to be worth their fee, and tells you what the whole thing cost. Never touches your brokerage. Not financial advice. |
 | **[Investment Tools](https://github.com/ChiefGyk3D/investment_tools)** | The original grab bag of Python calculators: auto loans, budget planning, compound interest, debt payoff, and more, with charts and Excel output. |
-| **[PTO Colada](https://github.com/ChiefGyk3D/PTO-Colada)** | Plans the fewest PTO days for the most days off. Give it the holidays your employer actually observes and your PTO balance, and it finds the long weekends and bridges worth taking, scores each plan in days off per PTO day, and counts honestly: every day once, PTO only on days you would have worked. |
+| **[Long Weekend Planner](https://github.com/ChiefGyk3D/Long_Weekend_Planner)** | Finds the long weekends hiding in your calendar and plans a year of PTO around them. Give it the holidays your employer actually observes and your PTO allowance, and it works out which ones are one day away from a four-day break. |
 
 ### 🪙 Monero & 😂 just for fun
 
@@ -262,23 +271,20 @@ Fixes for the laptops and desktops I actually run, so the next person doesn't ha
 **📹 Videos:** [YouTube](https://youtube.com/@ChiefGyk3D) • [TikTok](https://tiktok.com/@chiefgyk3d)
 **🔴 Livestreaming:** [YouTube](https://youtube.com/@ChiefGyk3D) • [Twitch](https://twitch.tv/chiefgyk3d) • [Kick](https://kick.com/chiefgyk3d) • [TikTok](https://tiktok.com/@chiefgyk3d)
 
-Educational content focused on giving aspiring tech and cybersecurity professionals practical, real-world knowledge:
+I make practical videos and livestreams about:
 
 - **Linux** as a daily driver and production environment
 - **Cybersecurity investigations** and real-world threat and news breakdowns
 - **Radio & Meshtastic** communications and mesh networking
-- **Endpoint security** and enterprise tooling deep dives
+- **Endpoint security** and enterprise tooling
 - **Home labs & networking** architecture and implementation
 - **Device reviews**, privacy tools, and open-source infrastructure
-
-Whether you're just starting out or leveling up, the goal is content that's accessible, practical, and security-focused.
 
 ---
 
 ## 🐧 Happy Hacking
 
-Everything I build is open source. Fork anything, send PRs, open issues, or just say hi.
-Let's make the internet more secure and fun, one commit at a time. 🛡️
+Fork anything, send PRs, open issues, or say hi.
 
 ---
 
