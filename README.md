@@ -19,7 +19,7 @@ I break things, fix things, automate everything, and talk about it on YouTube.
 
 [![StreamElements](https://img.shields.io/badge/StreamElements-Tip-blue?style=for-the-badge&logo=dollar-sign&logoColor=white)](https://streamelements.com/chiefgyk3d/tip)
 [![Patreon](https://img.shields.io/badge/Patreon-Support-orange?style=for-the-badge&logo=patreon&logoColor=white)](https://patreon.com/chiefgyk3d)
-[![Ko-fi](https://img.shields.io/badge/Ko--fi-Buy%20Me%20a%20Coffee-ff5f5f?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/chiefgyk3d)
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/A0A4E59UP)
 [![Support page](https://img.shields.io/badge/Crypto%20%26%20Merch-support.chiefgyk3d.com-8B949E?style=for-the-badge&logo=bitcoin&logoColor=white)](https://support.chiefgyk3d.com)
 
 **🔗 All my links:** [links.chiefgyk3d.com/socials](https://links.chiefgyk3d.com/socials) · [Blog and technical journal](https://chiefgyk3d.com) · [Consulting](https://renegadepenguinllc.com)
